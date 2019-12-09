@@ -2,9 +2,15 @@
 
 Testing in production (TiP) is gaining steam as an accepted practice in DevOps and testing communities, but no amount of preproduction QA testing can foresee all the possible scenarios in your real production deployment.
 
-The prevailing wisdom is that you will see failures in production; the only question is whether you'll be surprised by them or inflict them intentionally to test system resilience and learn from the experience. The latter approach is chaos engineering.
+The prevailing wisdom is that you will see failures in production; the only question is whether you'll be surprised by them or inflict them intentionally to test system resilience and learn from the experience.
+
+The latter approach is chaos engineering.
+
+> To understand all this knowledge is very important have a good background in Chaos Engineering, containers, fault injection, monitoring and observability.
 
 ## Principles of chaos engineering
+
+A chaos experiment is defined as the following five points by the Principles of chaos engineering
 
  * Build a Hypothesis around Steady State Behavior
  * Vary Real-world Events

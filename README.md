@@ -8,7 +8,27 @@ The latter approach is chaos engineering.
 
 > To understand all this knowledge is very important have a good background in Chaos Engineering, containers, fault injection, monitoring and observability.
 
-## Principles of chaos engineering
+## Introduction
+
+One of the earliest examples of a chaos fault injection was disabling servers using a tool created by Netflix called Chaos Monkey. Chaos Monkey worked by randomly disabled ___production server___ instances to ensure that they could handle such failure scenarios.
+
+Similarly, for ___Kubernetes___ there are tools targeting deleting pods, such as Kube-monkey, Target’s Pod-reaper and Powerfulseal made by Bloomberg.
+
+For ___Docker___ a tool called Pumba by A. Ledenev can target containers and for Docker Swarm the docker-chaosmonkey can target services.
+
+Other tools in this area include BBC’s Chaos Lamdba for terminating ___EC2 instances___ and GomJabbar for targeting ___private clouds___.
+
+Chaos related fault injection can also be done on a more ___application specific level___. Two such system are ChaosMachine and TripleAgent targeting JVM based applications.
+
+The ___network layer___ is another fault injection vector with a lot of support from tools. Quite a few of them utilize Iptables in combination with Traffic Control network emulation to inject different kinds of network failures including latency and dropping a percentage of traffic.
+
+Open-source examples include Netflix’s Latency Monkey, Pumba, Blockade, Muxy, and Comcast.
+
+Some ___close-source alternatives___ are Gremlin and ChaosCat. All tools are capable to be used either directly with a deployment environment or with some setup.
+
+For more resource based injection, at the ___level of CPU, RAM, disk and similar___, there are tools that can help with this. Gremlin, for example, can execute several such attacks, both ChaosCat and a dedicated tools like cpu-troll can facilitate the execution of CPU usage attacks.
+
+## Principles of Chaos Engineering
 
 A chaos experiment is defined as the following five points by the Principles of chaos engineering
 
@@ -114,7 +134,7 @@ More details in the following link ;-)
  * [kubernetes-chaos-lab](https://github.com/matthewbrahms/kubernetes-chaos-lab) - A brief guide to setting up your first chaos engineering lab on Kubernetes!
  * [How to Create a Kubernetes Cluster on Ubuntu 16.04 with kudeadm and Weave Net](https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kudeadm-and-weave-net/)
 
-## Examples
+## Examples Projects
 
  * [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - A Chaos Engineering Bootcamp
  * [HW4](https://github.com/kbalakr/Chaos-Engineering---DevOps-Demo) - Express servers were used to implement service topologies

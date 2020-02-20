@@ -8,7 +8,7 @@ The latter approach is chaos engineering.
 
 > To understand all this knowledge is very important have a good background in Chaos Engineering, containers, fault injection, monitoring and observability.
 
-## Introduction
+__Introduction__
 
 One of the earliest examples of a chaos fault injection was disabling servers using a tool created by Netflix called Chaos Monkey. Chaos Monkey worked by randomly disabled ___production server___ instances to ensure that they could handle such failure scenarios.
 
@@ -28,7 +28,7 @@ Some ___close-source alternatives___ are Gremlin and ChaosCat. All tools are cap
 
 For more resource based injection, at the ___level of CPU, RAM, disk and similar___, there are tools that can help with this. Gremlin, for example, can execute several such attacks, both ChaosCat and a dedicated tools like cpu-troll can facilitate the execution of CPU usage attacks.
 
-## Principles of Chaos Engineering
+## 1. Principles of Chaos Engineering
 
 A chaos experiment is defined as the following five points by the Principles of chaos engineering
 
@@ -42,7 +42,9 @@ More details in the following link ;-)
 
  * [PRINCIPLES OF CHAOS ENGINEERING](https://principlesofchaos.org/?lang=ENcontent)
 
-## Tools
+## 2. Fault Injection
+
+### Generic Tools
 
  * [The Simian Army](https://github.com/Netflix/SimianArmy) - A suite of tools for keeping your cloud operating in top form.
  * [Chaos Monkey](https://github.com/Netflix/chaosmonkey) - A resiliency tool that helps applications tolerate random instance failures.
@@ -50,36 +52,26 @@ More details in the following link ;-)
  * [Chaos Toolkit Turbulence](https://github.com/tmobile/chaostoolkit-turbulence) - This is an extension for Chaos Toolkit which adds support for Turbulence attacks.
  * [Monarch](https://github.com/tmobile/monarch) - This is a series of tools for Chaos Toolkit
  * [Muxy](https://github.com/mefellows/muxy/) - A chaos testing tool for simulating a real-world distributed system failures.
- * [ChaosBlade](https://github.com/chaosblade-io/chaosblade) - Chaosblade is an experimental tool that follows the principles of Chaos Engineering and is used to simulate common fault scenarios, helping to improve the recoverability of faulty systems and the fault tolerance of faults.
+ * [Chaos Blade](https://github.com/chaosblade-io/chaosblade) - Chaosblade is an experimental tool that follows the principles of Chaos Engineering and is used to simulate common fault scenarios, helping to improve the recoverability of faulty systems and the fault tolerance of faults.
  * [Cthulhu](https://github.com/xmatters/cthulhu-chaos-testing) - Chaos Engineering tool that helps evaluating the resiliency of microservice systems simulating various disaster scenarios against a target infrastructure in a data-driven manner.
  * [Namazu](https://github.com/osrg/namazu) - Programmable fuzzy scheduler for testing distributed systems.  
  * [Chaos Scimmia](https://github.com/joshuamckenty/chaos-scimmia) - Chaos Engineering for Redis
  * [HavocLeopard](https://github.com/jonfast565/HavocLeopard) - A set of simple chaos engineering apps that can be used to royally screw up your on-prem servers
  * [Arcdata](https://github.com/redcross/arcdata) - Open source incident management and volunteer scheduling application for Red Cross Disaster Services
 
-## Chaos As A Sevice
+### CPU's
 
- * [Gremlin Inc.](https://www.gremlin.com/) - Failure as a Service.
- * [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Chaos Engineering Experiment Automation
- * [Pystol.org](https://www.pystol.org/) - THE CLOUD CHAOS ENGINEERING TOOLBOX
- * [Cyphon](https://github.com/dunbarcyber/cyphon) - Open source incident management and response platform
- * [Controlled Chaos](https://github.com/DylanCauwels/ControlledChaos) - An all-in-one application that allows teams to create, execute, and analyze chaos engineering experiments with no previous DevOps experience or additional infrastructure setup.
- * [Chaos Platform](https://github.com/chaostoolkit/chaosplatform) - Chaos Engineering Platform for Everyone
- * [Chaos Hub](https://github.com/chaostoolkit/chaoshub-archive) - Chaos Hub stands on the shoulders of the Chaos Toolkit to provide a complete, user-friendly, platform to automate and collaborate on your Chaos Engineering and Resiliency efforts.
+### Memory
 
-## CPU's
+### File system
 
-## Memory
+### Disk
 
-## File system
-
-## Disk
-
-## Networking
+### Networking
 
  * [Toxiproxy](https://github.com/Shopify/toxiproxy) - A TCP proxy to simulate network and system conditions for chaos and resiliency testing.
 
-## Security
+### Security
 
  * [ChaoSlingr](https://github.com/Optum/ChaoSlingr) - Introducing Security Chaos Engineering. ChaoSlingr focuses primarily on the experimentation on AWS Infrastructure to proactively instrument system security failure through experimentation.
  * [What is security chaos engineering and why is it important?](https://hub.packtpub.com/what-is-security-chaos-engineering-and-why-is-it-important/)
@@ -88,13 +80,13 @@ More details in the following link ;-)
  * [Purple testing and chaos engineering in securityexperimentation](https://opensource.com/article/18/6/security-experimentation)
  * [A new approach to security instrumentation](https://opensource.com/article/18/4/new-approach-security-instrumentation)
 
-## Languages
+### Languages
 
-### Compilation time
+#### Compilation time
 
  * [ChaosCat](https://github.com/Torvaney/chaoscat) - Chaos engineering for Pull Requests - Taking a not-even-good joke a bit too far
 
-### Run time
+#### Run time
 
  * [Byteman](https://byteman.jboss.org/) - A Swiss Army Knife for Byte Code Manipulation.
  * [Byte-Monkey](https://github.com/mrwilson/byte-monkey) - Bytecode-level fault injection for the JVM. It works by instrumenting application code on the fly to deliberately introduce faults like exceptions and latency.
@@ -110,11 +102,11 @@ More details in the following link ;-)
  * [Chaos QoaLa](https://github.com/oslabs-beta/ChaosQoaLa) - ChaosQoaLa is a chaos engineering tool for injecting failure into JavaScript backed GraphQL end points.
  * [Chaos Reverse-engineering](https://github.com/pcoppens/chaos-re) - Chaos engineering approach by Reverse-engineering.
 
-## Application
+### Application
 
-## Kernel
+### Kernel & Operating System
 
-## Containers & Orchestrators
+### Containers & Orchestrators
 
  * [Royal Chaos](https://github.com/KTH/royal-chaos) - This repository contains the chaos engineering systems invented at KTH Royal Institute of Technology.
  * [Pumba](https://github.com/gaia-adm/pumba) - Chaos testing and network emulation for Docker containers (and clusters).
@@ -124,19 +116,20 @@ More details in the following link ;-)
  * [Chaos Util](https://github.com/abnamrocoesd/chaos-util) - Docker image with utilities for Chaos Engineering
  * [Drax](https://github.com/dcos-labs/drax) -  DC/OS Resilience Automated Xenodiagnosis tool. It helps to test DC/OS deployments by applying a Chaos Monkey-inspired, proactive and invasive testing approach.
  * [Pod-Reaper](https://github.com/target/pod-reaper) - A rules based pod killing container. Pod-Reaper was designed to kill pods that meet specific conditions that can be used for Chaos testing in Kubernetes.
- * [ChaosKube](https://github.com/linki/chaoskube) - chaoskube periodically kills random pods in your Kubernetes cluster.
+ * [Chaoskube](https://github.com/linki/chaoskube) - chaoskube periodically kills random pods in your Kubernetes cluster.
  * [Litmus](https://github.com/litmuschaos/litmus) - Framework for Kubernetes environments that enables users to run test suites, capture logs, generate reports and perform chaos tests.
  * [Chaos Operator](https://github.com/litmuschaos/chaos-operator) - Chaos engineering via kubernetes operator
  * [Kube Entropy](https://github.com/alexlokshin/kube-entropy) - A little chaos engineering application for kubernetes resilience testing.
  * [Chaos Coordinator](https://github.com/UtheMan/chaoscoordinator) - Chaos Coordinator is a set of tools that allow for chaos testing of the infrastructure used by Kubernetes clusters on Azure.
  * [kubernetes-chaos-lab](https://github.com/matthewbrahms/kubernetes-chaos-lab) - A brief guide to setting up your first chaos engineering lab on Kubernetes!
+ * [Chaos Mesh](https://github.com/pingcap/chaos-mesh) - A Chaos Engineering Platform for Kubernetes
 
-## Hypervisors
+### Hypervisors
 
  * [VMware Mangle](https://vmware.github.io/mangle/) - Orchestrating Chaos Engineering.
  * [Turbulence](https://github.com/cppforlife/turbulence-release) - Tool focused on BOSH environments capable of stressing VMs, manipulating network traffic, and more. It is very simmilar to Gremlin.
 
-## Cloud
+### Cloud
 
  * [Glooshot](https://github.com/solo-io/glooshot) - Chaos engineering framework to help you Immunize your service mesh
  * [kube-monkey](https://github.com/asobti/kube-monkey) - An implementation of Netflix's Chaos Monkey for Kubernetes clusters.
@@ -150,7 +143,7 @@ More details in the following link ;-)
  * [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos Engineering on Google Cloud Platform
  * [Chaos SSM Documents](https://github.com/adhorn/chaos-ssm-documents) - Collection of AWS SSM Documents to perform Chaos Engineering experiments
 
-## Examples Projects
+### Examples Projects
 
  * [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - A Chaos Engineering Bootcamp
  * [HW4](https://github.com/kbalakr/Chaos-Engineering---DevOps-Demo) - Express servers were used to implement service topologies
@@ -159,15 +152,33 @@ More details in the following link ;-)
  * [Chaos Engineering Demo](https://github.com/ericwyles/chaos-engineering-demo) - resilience4j + chaos toolkit + wiremock + chaos monkey for spring boot sample application
  * [How to Create a Kubernetes Cluster on Ubuntu 16.04 with kudeadm and Weave Net](https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kudeadm-and-weave-net/)
 
-## Incident Management Tool
+## 3. Observability
+
+### Specific tools
+
+### General Use
+
+ * [My Awesome Observability Repo ;-)](https://github.com/adriannovegil/awesome-observability)
+
+## 4. Incident Management Tool
 
  * [Banjaxed](https://github.com/intercom-archive/banjaxed) - Open source incident management tool
 
-## Cost of SEVs
+## 5. Cost of SEVs
 
  * [Availability Calculator](https://github.com/dastergon/availability-calculator) - Calculate how much downtime should be permitted in your SLA
 
-## References
+## 6. Chaos As A Sevice
+
+  * [Gremlin Inc.](https://www.gremlin.com/) - Failure as a Service.
+  * [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Chaos Engineering Experiment Automation
+  * [Pystol.org](https://www.pystol.org/) - THE CLOUD CHAOS ENGINEERING TOOLBOX
+  * [Cyphon](https://github.com/dunbarcyber/cyphon) - Open source incident management and response platform
+  * [Controlled Chaos](https://github.com/DylanCauwels/ControlledChaos) - An all-in-one application that allows teams to create, execute, and analyze chaos engineering experiments with no previous DevOps experience or additional infrastructure setup.
+  * [Chaos Platform](https://github.com/chaostoolkit/chaosplatform) - Chaos Engineering Platform for Everyone
+  * [Chaos Hub](https://github.com/chaostoolkit/chaoshub-archive) - Chaos Hub stands on the shoulders of the Chaos Toolkit to provide a complete, user-friendly, platform to automate and collaborate on your Chaos Engineering and Resiliency efforts.
+
+## 7. References
 
  * https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
  * https://raw.githubusercontent.com/dastergon/awesome-chaos-engineering/master/README.md
@@ -219,11 +230,11 @@ More details in the following link ;-)
  * https://github.com/gremlin/chaos-engineering-tools
  * https://github.com/greenlearner01/Chaos-Engineering/blob/master/Chaos-Engineering.md
 
-## License
+## 8. License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
 
-## Contributing
+## 9. Contributing
 
 Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first.
 

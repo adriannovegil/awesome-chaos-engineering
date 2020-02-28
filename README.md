@@ -73,6 +73,7 @@ More details in the following link ;-)
 
 ### Security
 
+ * [Infection Monkey](https://github.com/guardicore/monkey) - Open source security tool for testing a data center's resiliency to perimeter breaches and internal server infection. The Monkey uses various methods to self propagate across a data center and reports success to a centralized Monkey Island server.
  * [ChaoSlingr](https://github.com/Optum/ChaoSlingr) - Introducing Security Chaos Engineering. ChaoSlingr focuses primarily on the experimentation on AWS Infrastructure to proactively instrument system security failure through experimentation.
  * [What is security chaos engineering and why is it important?](https://hub.packtpub.com/what-is-security-chaos-engineering-and-why-is-it-important/)
  * [Security Chaos Engineering: A new paradigm for cybersecurity](https://opensource.com/article/18/1/new-paradigm-cybersecurity)
@@ -178,8 +179,41 @@ More details in the following link ;-)
   * [Chaos Platform](https://github.com/chaostoolkit/chaosplatform) - Chaos Engineering Platform for Everyone
   * [Chaos Hub](https://github.com/chaostoolkit/chaoshub-archive) - Chaos Hub stands on the shoulders of the Chaos Toolkit to provide a complete, user-friendly, platform to automate and collaborate on your Chaos Engineering and Resiliency efforts.
 
-## 7. References
+## 7. Gamedays
 
+ * [Target: What is a Gameday?](https://tech.target.com/2019/05/09/chaos-engineering-at-Target.html) - Chaos Gamedays experience by Target.
+ * [Codecentric: Chaos Engineering Gamedays](https://blog.codecentric.de/en/2018/08/chaos-engineering-gameday/) - Chaos Gamedays by Codecentric.
+ * [New Relic: How to run a Gameday?](https://blog.newrelic.com/engineering/how-to-run-a-game-day/) - Chaos Gamedays experience by New Relic.
+ * [Dius: Gamedays resources](https://dius.com.au/resources/game-day/) - Resources for getting started with GameDay and Chaos Engineering.
+ * [Gremlin: Gamedays](https://www.gremlin.com/gameday/) - Resources for getting started with GameDay and Chaos Engineering.
+ * [Gremlin: What is a Chaos Day?](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/#what-is-a-chaos-day) - What is a Gameday according Gremlin.
+ * [Gremlin: Why run a Chaos Day?](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/#why-run-a-chaos-day) - Reasons to run Gamedays according Gremlin.
+ * [Gremlin: How to run a Gameday?](https://www.gremlin.com/community/tutorials/how-to-run-a-gameday/) - Methodology to run Gamedays according Gremlin.
+ * [Gremlin DB: Breaking Dynamo DB](https://www.gremlin.com/community/tutorials/gremlin-gameday-breaking-dynamodb/) - Example of a Gameday with DynamoDB by Gremlin.
+ * [Gremlin: Introduction to Gameday](https://www.gremlin.com/community/tutorials/introduction-to-gamedays/) - What is a Gameday according Gremlin.
+ * [Gremlin: Planning your own Chaos Day](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/) - Example of a Gameday with DynamoDB by Gremlin.
+ * [Gremlin: Inside Gremlin 2019 Gremlin Gamedays Roadmap](https://www.gremlin.com/community/tutorials/inside-gremlin-2019-gremlin-gamedays-roadmap/) - Chaos Gamedays experience by Gremlin.
+ * [Gremlin: What I lerned running the Chaos Lab with Kafka](https://www.gremlin.com/community/tutorials/what-i-learned-running-the-chaos-lab-kafka-breaks/) - Example of a Gameday with Kafka by Gremlin.
+ * [Chaos Toolkit: Chaos Engineering with Humans in the loop](https://medium.com/chaos-toolkit/chaos-engineering-with-humans-in-the-loop-f4854900b1eb) - Article about Chaos Gamedays.
+ * [GooCardless: All fun and games until you start with Gamedays](https://gocardless.com/blog/game-days-at-gc/) - Article about Chaos Gamedays.
+ * [InfoQ: Gamedays - Achieving Resilience through Chaos Engineering](https://www.infoq.com/presentations/gameday-chaos-engineering) - InfoQ Presentation with experiences about Chaos Gamedays.
+
+## 8. Forums and Groups
+
+ * [Working Group Proposal](https://github.com/chaoseng/wg-chaoseng) - Working Group Proposal: Chaos Engineering
+ * [Chaos Community Google Group](https://groups.google.com/forum/#!forum/chaos-community)
+ * [Chaos Engineering LinkedIn Group](https://www.linkedin.com/groups/7057761)
+ * [Chaos Engineering Slack Community](https://gremlin.com/community)
+ * [CNCF Chaos Engineering Working Group](https://groups.google.com/forum/#!forum/chaoseng-wg)
+ * CNCF Chaos Engineering Working Group Slack: #chaosengineering (slack.cncf.io)
+ * [CNCF Chaos Engineering Working Group Github](https://github.com/chaoseng/wg-chaoseng)
+ * [Chaos Toolkit Slack Community](https://join.chaostoolkit.org)
+
+## 9. References
+
+ * https://github.com/chaoseng/wg-chaoseng/blob/master/WHITEPAPER.md
+ * https://docs.google.com/document/d/1BeeJZIyReCFNLJQrZjwA4KMlUJelxFFEv3IwED16lHE/edit?ts=5ace0eab#heading=h.ephtflhfpd1d
+ * https://github.com/dastergon/awesome-chaos-engineering
  * https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
  * https://raw.githubusercontent.com/dastergon/awesome-chaos-engineering/master/README.md
  * https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/
@@ -230,11 +264,11 @@ More details in the following link ;-)
  * https://github.com/gremlin/chaos-engineering-tools
  * https://github.com/greenlearner01/Chaos-Engineering/blob/master/Chaos-Engineering.md
 
-## 8. License
+## 10. License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
 
-## 9. Contributing
+## 11. Contributing
 
 Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first.
 

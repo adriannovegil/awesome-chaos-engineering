@@ -215,7 +215,7 @@ More details in the following link ;-)
  * https://docs.google.com/document/d/1BeeJZIyReCFNLJQrZjwA4KMlUJelxFFEv3IwED16lHE/edit?ts=5ace0eab#heading=h.ephtflhfpd1d
  * https://github.com/dastergon/awesome-chaos-engineering
  * https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
- * https://raw.githubusercontent.com/dastergon/awesome-chaos-engineering/master/README.md
+ * https://github.com/dastergon/awesome-chaos-engineering
  * https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/
  * https://thenewstack.io/gremlins-tammy-butow-on-the-business-side-of-chaos-engineering/
  * https://learnk8s.io/blog/kubernetes-chaos-engineering-lessons-learned
@@ -245,6 +245,8 @@ More details in the following link ;-)
  * http://shop.oreilly.com/product/0636920251897.do
  * https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/
  * https://www.gremlin.com/blog/the-discipline-of-chaos-engineering/
+ * http://kth.diva-portal.org/smash/get/diva2:1366436/FULLTEXT01.pdf
+ * https://arxiv.org/pdf/1907.13039.pdf
  * https://arxiv.org/abs/1404.3056
  * https://arxiv.org/abs/1702.05843
  * https://arxiv.org/abs/1702.05849

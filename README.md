@@ -58,6 +58,8 @@ More details in the following link ;-)
  * [Chaos Scimmia](https://github.com/joshuamckenty/chaos-scimmia) - Chaos Engineering for Redis
  * [HavocLeopard](https://github.com/jonfast565/HavocLeopard) - A set of simple chaos engineering apps that can be used to royally screw up your on-prem servers
  * [Arcdata](https://github.com/redcross/arcdata) - Open source incident management and volunteer scheduling application for Red Cross Disaster Services
+ * [AWS Chaos Scripts](https://github.com/adhorn/aws-chaos-scripts) - Collection of python scripts to run failure injection on AWS infrastructure
+
 
 ### CPU's
 
@@ -217,6 +219,7 @@ More details in the following link ;-)
  * https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
  * https://github.com/dastergon/awesome-chaos-engineering
  * https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/
+ * https://medium.com/capital-one-tech/4-real-world-scenarios-that-read-like-chaos-engineering-experiments-8dbf40c5f247
  * https://thenewstack.io/gremlins-tammy-butow-on-the-business-side-of-chaos-engineering/
  * https://learnk8s.io/blog/kubernetes-chaos-engineering-lessons-learned
  * https://gocardless.com/blog/game-days-at-gc/

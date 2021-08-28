@@ -60,7 +60,6 @@ More details in the following link ;-)
  * [Arcdata](https://github.com/redcross/arcdata) - Open source incident management and volunteer scheduling application for Red Cross Disaster Services
  * [AWS Chaos Scripts](https://github.com/adhorn/aws-chaos-scripts) - Collection of python scripts to run failure injection on AWS infrastructure
 
-
 ### CPU's
 
 ### Memory

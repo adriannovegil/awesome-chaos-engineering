@@ -149,7 +149,7 @@ More details in the following link ;-)
 
 - [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - A Chaos Engineering Bootcamp.
 - [HW4](https://github.com/kbalakr/Chaos-Engineering---DevOps-Demo) - Express servers were used to implement service topologies.
-- [Serverless Chaos Engineering Demo](https://github.com/gunnargrosch/serverless-chaos-demo) - This example demonstrates how to use Adrian Hornsby's Failure Injection Layer (https://github.com/adhorn/FailureInjectionLayer) to perform chaos engineering experiments on a serverless environment.
+- [Serverless Chaos Engineering Demo](https://github.com/gunnargrosch/serverless-chaos-demo) - This example demonstrates how to use Adrian Hornsby's Failure Injection Layer  to perform chaos engineering experiments on a serverless environment.
 - [Chaos Engineeing Demo](https://github.com/fazdevils/chaos-engineeing-demo) - Simple project demonstrating chaos engineering with Chaos Monkey and Resiliance4J.
 - [Chaos Engineering Demo](https://github.com/ericwyles/chaos-engineering-demo) - resilience4j + chaos toolkit + wiremock + chaos monkey for spring boot sample application.
 - [How to Create a Kubernetes Cluster on Ubuntu 16.04 with kudeadm and Weave Net](https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kudeadm-and-weave-net/)
@@ -199,10 +199,12 @@ More details in the following link ;-)
 
 ## 8. Forums and Groups
 
+<!--lint ignore double-link-->
 - [CNCF Chaos Engineering Working Group](https://groups.google.com/forum/#!forum/chaoseng-wg)
 - CNCF Chaos Engineering Working Group Slack: #chaosengineering (slack.cncf.io)
 - [CNCF Chaos Engineering Working Group GitHub](https://github.com/chaoseng/wg-chaoseng)
 - [Chaos Toolkit Slack Community](https://join.chaostoolkit.org)
+<!--lint ignore double-link-->
 - [Chaos Community Google Group](https://groups.google.com/forum/#!forum/chaos-community)
 - [Chaos Engineering LinkedIn Group](https://www.linkedin.com/groups/7057761)
 - [Chaos Engineering Slack Community](https://gremlin.com/community)

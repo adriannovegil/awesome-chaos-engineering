@@ -1,4 +1,4 @@
-# Awesome Chaos Engineering
+# Awesome Chaos Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 Testing in production (TiP) is gaining steam as an accepted practice in DevOps and testing communities, but no amount of preproduction QA testing can foresee all the possible scenarios in your real production deployment.
 

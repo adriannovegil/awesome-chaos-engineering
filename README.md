@@ -8,21 +8,21 @@ The latter approach is chaos engineering.
 
 > To understand all this knowledge is very important have a good background in Chaos Engineering, containers, fault injection, monitoring and observability.
 
-__Introduction__
+## 0. Introduction__
 
 One of the earliest examples of a chaos fault injection was disabling servers using a tool created by Netflix called Chaos Monkey. Chaos Monkey worked by randomly disabled ___production server___ instances to ensure that they could handle such failure scenarios.
 
-Similarly, for ___Kubernetes___ there are tools targeting deleting pods, such as Kube-monkey, Target’s Pod-reaper and Powerfulseal made by Bloomberg.
+Similarly, for ___Kubernetes___ there are tools targeting deleting pods, such as Kube-monkey, Target's Pod-reaper and Powerfulseal made by Bloomberg.
 
 For ___Docker___ a tool called Pumba by A. Ledenev can target containers and for Docker Swarm the docker-chaosmonkey can target services.
 
-Other tools in this area include BBC’s Chaos Lamdba for terminating ___EC2 instances___ and GomJabbar for targeting ___private clouds___.
+Other tools in this area include BBC's Chaos Lamdba for terminating ___EC2 instances___ and GomJabbar for targeting ___private clouds___.
 
 Chaos related fault injection can also be done on a more ___application specific level___. Two such system are ChaosMachine and TripleAgent targeting JVM based applications.
 
 The ___network layer___ is another fault injection vector with a lot of support from tools. Quite a few of them utilize Iptables in combination with Traffic Control network emulation to inject different kinds of network failures including latency and dropping a percentage of traffic.
 
-Open-source examples include Netflix’s Latency Monkey, Pumba, Blockade, Muxy, and Comcast.
+Open-source examples include Netflix's Latency Monkey, Pumba, Blockade, Muxy, and Comcast.
 
 Some ___close-source alternatives___ are Gremlin and ChaosCat. All tools are capable to be used either directly with a deployment environment or with some setup.
 
@@ -187,12 +187,10 @@ More details in the following link ;-)
 - [New Relic: How to run a Gameday?](https://blog.newrelic.com/engineering/how-to-run-a-game-day/) - Chaos Gamedays experience by New Relic.
 - [Dius: Gamedays resources](https://dius.com.au/resources/game-day/) - Resources for getting started with GameDay and Chaos Engineering.
 - [Gremlin: Gamedays](https://www.gremlin.com/gameday/) - Resources for getting started with GameDay and Chaos Engineering.
-- [Gremlin: What is a Chaos Day?](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/#what-is-a-chaos-day) - What is a Gameday according Gremlin.
-- [Gremlin: Why run a Chaos Day?](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/#why-run-a-chaos-day) - Reasons to run Gamedays according Gremlin.
+- [Gremlin: Planning your own Chaos Day](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/) - Example of a Gameday with DynamoDB by Gremlin.
 - [Gremlin: How to run a Gameday?](https://www.gremlin.com/community/tutorials/how-to-run-a-gameday/) - Methodology to run Gamedays according Gremlin.
 - [Gremlin DB: Breaking Dynamo DB](https://www.gremlin.com/community/tutorials/gremlin-gameday-breaking-dynamodb/) - Example of a Gameday with DynamoDB by Gremlin.
 - [Gremlin: Introduction to Gameday](https://www.gremlin.com/community/tutorials/introduction-to-gamedays/) - What is a Gameday according Gremlin.
-- [Gremlin: Planning your own Chaos Day](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/) - Example of a Gameday with DynamoDB by Gremlin.
 - [Gremlin: Inside Gremlin 2019 Gremlin Gamedays Roadmap](https://www.gremlin.com/community/tutorials/inside-gremlin-2019-gremlin-gamedays-roadmap/) - Chaos Gamedays experience by Gremlin.
 - [Gremlin: What I lerned running the Chaos Lab with Kafka](https://www.gremlin.com/community/tutorials/what-i-learned-running-the-chaos-lab-kafka-breaks/) - Example of a Gameday with Kafka by Gremlin.
 - [Chaos Toolkit: Chaos Engineering with Humans in the loop](https://medium.com/chaos-toolkit/chaos-engineering-with-humans-in-the-loop-f4854900b1eb) - Article about Chaos Gamedays.
@@ -201,14 +199,13 @@ More details in the following link ;-)
 
 ## 8. Forums and Groups
 
-- [Working Group Proposal](https://github.com/chaoseng/wg-chaoseng) - Working Group Proposal: Chaos Engineering.
-- [Chaos Community Google Group](https://groups.google.com/forum/#!forum/chaos-community)
-- [Chaos Engineering LinkedIn Group](https://www.linkedin.com/groups/7057761)
-- [Chaos Engineering Slack Community](https://gremlin.com/community)
 - [CNCF Chaos Engineering Working Group](https://groups.google.com/forum/#!forum/chaoseng-wg)
 - CNCF Chaos Engineering Working Group Slack: #chaosengineering (slack.cncf.io)
 - [CNCF Chaos Engineering Working Group GitHub](https://github.com/chaoseng/wg-chaoseng)
 - [Chaos Toolkit Slack Community](https://join.chaostoolkit.org)
+- [Chaos Community Google Group](https://groups.google.com/forum/#!forum/chaos-community)
+- [Chaos Engineering LinkedIn Group](https://www.linkedin.com/groups/7057761)
+- [Chaos Engineering Slack Community](https://gremlin.com/community)
 
 ## 9. References
 

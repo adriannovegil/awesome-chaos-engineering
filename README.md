@@ -227,6 +227,8 @@ More details in the following link ;-)
 
 ## 9. References
 
+- https://blog.qaware.de/posts/chaos-engineering-the-status-quo/
+- https://blog.qaware.de/posts/chaos-engineering-chaostoolkit/
 - https://github.com/chaoseng/wg-chaoseng/blob/master/WHITEPAPER.md
 - https://docs.google.com/document/d/1BeeJZIyReCFNLJQrZjwA4KMlUJelxFFEv3IwED16lHE/edit?ts=5ace0eab#heading=h.ephtflhfpd1d
 - https://github.com/dastergon/awesome-chaos-engineering

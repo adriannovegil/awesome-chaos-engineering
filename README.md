@@ -11,17 +11,18 @@ The latter approach is chaos engineering.
 ## Contents
 
 - [0. Introduction](#0-introduction)
-- [1. Principles of Chaos Engineering](#1-principles-of-chaos-engineering)
-- [2. Fault Injection](#2-fault-injection)
-- [3. Observability](#3-observability)
-- [4. Incident Management Tool](#4-incident-management-tool)
-- [5. Cost of SEVs](#5-cost-of-sevs)
-- [6. Chaos As A Sevice](#6-chaos-as-a-sevice)
-- [7. Gamedays](#7-gamedays)
-- [8. Forums and Groups](#8-forums-and-groups)
-- [9. References](#9-references)
-- [10. License](#10-license)
-- [11. Contributing](#11-contributing)
+- [1. Chaos in Practice](#1-chaos-in-practice)
+- [2. Principles of Chaos Engineering](#1-principles-of-chaos-engineering)
+- [3. Fault Injection](#2-fault-injection)
+- [4. Observability](#3-observability)
+- [5. Incident Management Tool](#4-incident-management-tool)
+- [6. Cost of SEVs](#5-cost-of-sevs)
+- [7. Chaos As A Sevice](#6-chaos-as-a-sevice)
+- [8. Gamedays](#7-gamedays)
+- [9. Forums and Groups](#8-forums-and-groups)
+- [10. References](#9-references)
+- [11. License](#10-license)
+- [12. Contributing](#11-contributing)
 
 ## 0. Introduction
 
@@ -43,7 +44,18 @@ Some ___close-source alternatives___ are Gremlin and ChaosCat. All tools are cap
 
 For more resource based injection, at the ___level of CPU, RAM, disk and similar___, there are tools that can help with this. Gremlin, for example, can execute several such attacks, both ChaosCat and a dedicated tools like cpu-troll can facilitate the execution of CPU usage attacks.
 
-## 1. Principles of Chaos Engineering
+## 1. Chaos in Practice
+
+To specifically address the uncertainty of distributed systems at scale, Chaos Engineering can be thought of as the facilitation of experiments to uncover systemic weaknesses. These experiments follow four steps:
+
+- Start by defining ‘steady state’ as some measurable output of a system that indicates normal behavior.
+- Hypothesize that this steady state will continue in both the control group and the experimental group.
+- Introduce variables that reflect real world events like servers that crash, hard drives that malfunction, network connections that are severed, etc.
+- Try to disprove the hypothesis by looking for a difference in steady state between the control group and the experimental group.
+
+The harder it is to disrupt the steady state, the more confidence we have in the behavior of the system. If a weakness is uncovered, we now have a target for improvement before that behavior manifests in the system at large.
+
+## 2. Principles of Chaos Engineering
 
 A chaos experiment is defined as the following five points by the Principles of chaos engineering
 
@@ -57,7 +69,7 @@ More details in the following link ;-)
 
 - [PRINCIPLES OF CHAOS ENGINEERING](https://principlesofchaos.org/?lang=ENcontent)
 
-## 2. Fault Injection
+## 3. Fault Injection
 
 ### Generic Tools
 
@@ -77,6 +89,8 @@ More details in the following link ;-)
 
 ### CPU's
 
+- [Cpu Troll](https://github.com/TrollScripts/cpu-troll) - Dedicated to raising CPU latency by the requested percentage and timespan.
+
 ### Memory
 
 ### File system
@@ -86,6 +100,7 @@ More details in the following link ;-)
 ### Networking
 
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) - A TCP proxy to simulate network and system conditions for chaos and resiliency testing.
+- [Comcast](https://github.com/tylertreat/comcast) - A tool designed to simulate common network problems like latency, bandwidth restrictions, and dropped/reordered/corrupted packets.
 
 ### Security
 
@@ -121,11 +136,15 @@ More details in the following link ;-)
 
 ### Application
 
+- [ChaosMachine](https://github.com/KTH/royal-chaos/tree/master/chaosmachine) - Tool to do chaos engineering at the application level in the JVM..
+- [TripleAgent](https://github.com/KTH/royal-chaos/tree/master/tripleagent) - System for fault injection for Java applications. .
+
 ### Kernel & Operating System
 
 ### Containers & Orchestrators
 
-- [Royal Chaos](https://github.com/KTH/royal-chaos) - This repository contains the chaos engineering systems invented at KTH Royal Institute of Technology.
+- [ChaosOrca](https://github.com/KTH/royal-chaos/tree/master/chaosorca) - Tool for doing Chaos Engineering on containers by perturbing system calls for processes inside containers.
+- [POBS](https://github.com/KTH/royal-chaos/tree/master/pobs) - Automatic Observability and Chaos for Dockerized Java Applications.
 - [Pumba](https://github.com/gaia-adm/pumba) - Chaos testing and network emulation for Docker containers (and clusters).
 - [Blockade](https://github.com/worstcase/blockade) - Docker-based utility for testing network failures and partitions in distributed applications.
 - [Chaos Engineering for Docker](https://github.com/cloudchaos/docker) - Chaos Engineering for Docker.
@@ -169,7 +188,7 @@ More details in the following link ;-)
 - [Chaos Engineering Demo](https://github.com/ericwyles/chaos-engineering-demo) - resilience4j + chaos toolkit + wiremock + chaos monkey for spring boot sample application.
 - [How to Create a Kubernetes Cluster on Ubuntu 16.04 with kudeadm and Weave Net](https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kudeadm-and-weave-net/)
 
-## 3. Observability
+## 4. Observability
 
 ### Specific tools
 
@@ -177,15 +196,15 @@ More details in the following link ;-)
 
 - [My Awesome Observability Repo ;-)](https://github.com/adriannovegil/awesome-observability)
 
-## 4. Incident Management Tool
+## 5. Incident Management Tool
 
 - [Banjaxed](https://github.com/intercom-archive/banjaxed) - Open source incident management tool.
 
-## 5. Cost of SEVs
+## 6. Cost of SEVs
 
 - [Availability Calculator](https://github.com/dastergon/availability-calculator) - Calculate how much downtime should be permitted in your SLA.
 
-## 6. Chaos As A Sevice
+## 7. Chaos As A Sevice
 
 - [Gremlin Inc.](https://www.gremlin.com/) - Failure as a Service.
 - [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Chaos Engineering Experiment Automation.
@@ -196,7 +215,7 @@ More details in the following link ;-)
 - [Chaos Hub](https://github.com/chaostoolkit/chaoshub-archive) - Chaos Hub stands on the shoulders of the Chaos Toolkit to provide a complete, user-friendly, platform to automate and collaborate on your Chaos Engineering and Resiliency efforts.
 - [steadybit](https://www.steadybit.com/) - Chaos Engineering platform that helps to proactively reduce downtime and provide visibility into systems to detect issues.
 
-## 7. Gamedays
+## 8. Gamedays
 
 - [Target: What is a Gameday?](https://tech.target.com/2019/05/09/chaos-engineering-at-Target.html) - Chaos Gamedays experience by Target.
 - [Codecentric: Chaos Engineering Gamedays](https://blog.codecentric.de/en/2018/08/chaos-engineering-gameday/) - Chaos Gamedays by Codecentric.
@@ -213,7 +232,7 @@ More details in the following link ;-)
 - [GooCardless: All fun and games until you start with Gamedays](https://gocardless.com/blog/game-days-at-gc/) - Article about Chaos Gamedays.
 - [InfoQ: Gamedays - Achieving Resilience through Chaos Engineering](https://www.infoq.com/presentations/gameday-chaos-engineering) - InfoQ Presentation with experiences about Chaos Gamedays.
 
-## 8. Forums and Groups
+## 9. Forums and Groups
 
 <!--lint ignore double-link-->
 - [CNCF Chaos Engineering Working Group](https://groups.google.com/forum/#!forum/chaoseng-wg)
@@ -225,7 +244,7 @@ More details in the following link ;-)
 - [Chaos Engineering LinkedIn Group](https://www.linkedin.com/groups/7057761)
 - [Chaos Engineering Slack Community](https://gremlin.com/community)
 
-## 9. References
+## 10. References
 
 - https://blog.qaware.de/posts/chaos-engineering-the-status-quo/
 - https://blog.qaware.de/posts/chaos-engineering-chaostoolkit/
@@ -285,11 +304,11 @@ More details in the following link ;-)
 - https://github.com/gremlin/chaos-engineering-tools
 - https://github.com/greenlearner01/Chaos-Engineering/blob/master/Chaos-Engineering.md
 
-## 10. License
+## 11. License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
 
-## 11. Contributing
+## 12. Contributing
 
 Contributions welcome! Read the [contribution guidelines](contributing.md) first.
 

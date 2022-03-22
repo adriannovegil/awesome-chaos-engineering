@@ -12,37 +12,39 @@ The latter approach is chaos engineering.
 
 - [0. Introduction](#0-introduction)
 - [1. Chaos in Practice](#1-chaos-in-practice)
-- [2. Principles of Chaos Engineering](#1-principles-of-chaos-engineering)
-- [3. Fault Injection](#2-fault-injection)
-- [4. Observability](#3-observability)
-- [5. Incident Management Tool](#4-incident-management-tool)
-- [6. Cost of SEVs](#5-cost-of-sevs)
-- [7. Chaos As A Sevice](#6-chaos-as-a-sevice)
-- [8. Gamedays](#7-gamedays)
-- [9. Forums and Groups](#8-forums-and-groups)
-- [10. References](#9-references)
-- [11. License](#10-license)
-- [12. Contributing](#11-contributing)
+- [2. Principles of Chaos Engineering](#2-principles-of-chaos-engineering)
+- [3. Fault Injection](#3-fault-injection)
+- [4. Observability](#4-observability)
+- [5. Incident Management Tool](#5-incident-management-tool)
+- [6. Cost of SEVs](#6-cost-of-sevs)
+- [7. Chaos As A Sevice](#7-chaos-as-a-sevice)
+- [8. Gamedays](#8-gamedays)
+- [9. Forums and Groups](#9-forums-and-groups)
+- [10. References](#10-references)
+- [11. License](#11-license)
+- [12. Contributing](#12-contributing)
 
 ## 0. Introduction
 
-One of the earliest examples of a chaos fault injection was disabling servers using a tool created by Netflix called Chaos Monkey. Chaos Monkey worked by randomly disabled ___production server___ instances to ensure that they could handle such failure scenarios.
+__Chaos engineering__ is defined as "the discipline of experimenting on a system in order to build confidence in the system's capability to withstand turbulent conditions in production" (Principles of Chaos Engineering, http://principlesofchaos.org/).
 
-Similarly, for ___Kubernetes___ there are tools targeting deleting pods, such as Kube-monkey, Target's Pod-reaper and Powerfulseal made by Bloomberg.
+In other words, it's a software testing method focusing on finding evidence of problems before they are experienced by users.
 
-For ___Docker___ a tool called Pumba by A. Ledenev can target containers and for Docker Swarm the docker-chaosmonkey can target services.
+It's a common misconception that chaos engineering is only about randomly breaking things in production. It's not. Although running experiments in production is a unique part of chaos engineering (more on that later), it's about much more than that—anything that helps us be confident the system can withstand turbulence.
 
-Other tools in this area include BBC's Chaos Lamdba for terminating ___EC2 instances___ and GomJabbar for targeting ___private clouds___.
+> IMPORTANT!: Chaos engineering is not just about randomly breaking things ;-)
 
-Chaos related fault injection can also be done on a more ___application specific level___. Two such system are ChaosMachine and TripleAgent targeting JVM based applications.
+It interfaces with site reliability engineering (SRE), application and systems performance analysis, and other forms of testing.
 
-The ___network layer___ is another fault injection vector with a lot of support from tools. Quite a few of them utilize Iptables in combination with Traffic Control network emulation to inject different kinds of network failures including latency and dropping a percentage of traffic.
+Practicing chaos engineering can help you prepare for failure, and by doing that, learn to build better systems, improve existing ones, and make the world a safer place.
 
-Open-source examples include Netflix's Latency Monkey, Pumba, Blockade, Muxy, and Comcast.
+### Motivations for chaos engineering
 
-Some ___close-source alternatives___ are Gremlin and ChaosCat. All tools are capable to be used either directly with a deployment environment or with some setup.
+There are at least three good reasons to implement chaos engineering:
 
-For more resource based injection, at the ___level of CPU, RAM, disk and similar___, there are tools that can help with this. Gremlin, for example, can execute several such attacks, both ChaosCat and a dedicated tools like cpu-troll can facilitate the execution of CPU usage attacks.
+- Determining risk and cost and setting service-level indicators, objectives, and agreements
+- Testing a system (often complex and distributed) as a whole
+- Finding emergent properties you were unaware of
 
 ## 1. Chaos in Practice
 
@@ -67,7 +69,7 @@ A chaos experiment is defined as the following five points by the Principles of 
 
 More details in the following link ;-)
 
-- [PRINCIPLES OF CHAOS ENGINEERING](https://principlesofchaos.org/?lang=ENcontent)
+- [PRINCIPLES OF CHAOS ENGINEERING](https://principlesofchaos.org/)
 
 ## 3. Fault Injection
 
@@ -106,11 +108,6 @@ More details in the following link ;-)
 
 - [Infection Monkey](https://github.com/guardicore/monkey) - Open source security tool for testing a data center's resiliency to perimeter breaches and internal server infection. The Monkey uses various methods to self propagate across a data center and reports success to a centralized Monkey Island server.
 - [ChaoSlingr](https://github.com/Optum/ChaoSlingr) - Introducing Security Chaos Engineering. ChaoSlingr focuses primarily on the experimentation on AWS Infrastructure to proactively instrument system security failure through experimentation.
-- [What is security chaos engineering and why is it important?](https://hub.packtpub.com/what-is-security-chaos-engineering-and-why-is-it-important/)
-- [Security Chaos Engineering: A new paradigm for cybersecurity](https://opensource.com/article/18/1/new-paradigm-cybersecurity)
-- [Injecting chaos experiments into security log pipelines](https://opensource.com/article/18/9/injecting-chaos-experiments-security-log-pipelines)
-- [Purple testing and chaos engineering in securityexperimentation](https://opensource.com/article/18/6/security-experimentation)
-- [A new approach to security instrumentation](https://opensource.com/article/18/4/new-approach-security-instrumentation)
 
 ### Languages
 
@@ -136,7 +133,7 @@ More details in the following link ;-)
 
 ### Application
 
-- [ChaosMachine](https://github.com/KTH/royal-chaos/tree/master/chaosmachine) - Tool to do chaos engineering at the application level in the JVM..
+- [ChaosMachine](https://github.com/KTH/royal-chaos/tree/master/chaosmachine) - Tool to do chaos engineering at the application level in the JVM.
 - [TripleAgent](https://github.com/KTH/royal-chaos/tree/master/tripleagent) - System for fault injection for Java applications. .
 
 ### Kernel & Operating System
@@ -246,6 +243,12 @@ More details in the following link ;-)
 
 ## 10. References
 
+- https://github.com/seeker89/chaos-engineering-book
+- [What is security chaos engineering and why is it important?](https://hub.packtpub.com/what-is-security-chaos-engineering-and-why-is-it-important/)
+- [Security Chaos Engineering: A new paradigm for cybersecurity](https://opensource.com/article/18/1/new-paradigm-cybersecurity)
+- [Injecting chaos experiments into security log pipelines](https://opensource.com/article/18/9/injecting-chaos-experiments-security-log-pipelines)
+- [Purple testing and chaos engineering in securityexperimentation](https://opensource.com/article/18/6/security-experimentation)
+- [A new approach to security instrumentation](https://opensource.com/article/18/4/new-approach-security-instrumentation)
 - https://blog.qaware.de/posts/chaos-engineering-the-status-quo/
 - https://blog.qaware.de/posts/chaos-engineering-chaostoolkit/
 - https://github.com/chaoseng/wg-chaoseng/blob/master/WHITEPAPER.md

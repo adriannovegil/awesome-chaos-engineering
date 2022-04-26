@@ -153,7 +153,6 @@ More details in the following link ;-)
 - [Litmus](https://github.com/litmuschaos/litmus) - Framework for Kubernetes environments that enables users to run test suites, capture logs, generate reports and perform chaos tests.
 - [Chaos Operator](https://github.com/litmuschaos/chaos-operator) - Chaos engineering via kubernetes operator.
 - [Kube Entropy](https://github.com/alexlokshin/kube-entropy) - A little chaos engineering application for kubernetes resilience testing.
-- [Chaos Coordinator](https://github.com/UtheMan/chaoscoordinator) - Chaos Coordinator is a set of tools that allow for chaos testing of the infrastructure used by Kubernetes clusters on Azure.
 - [kubernetes-chaos-lab](https://github.com/matthewbrahms/kubernetes-chaos-lab) - A brief guide to setting up your first chaos engineering lab on Kubernetes!.
 - [Chaos Mesh](https://github.com/pingcap/chaos-mesh) - A Chaos Engineering Platform for Kubernetes.
 
@@ -207,8 +206,6 @@ More details in the following link ;-)
 - [Gremlin Inc.](https://www.gremlin.com/) - Failure as a Service.
 - [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Chaos Engineering Experiment Automation.
 - [Pystol.org](https://www.pystol.org/) - The cloud chaos engineering toolbox.
-- [Cyphon](https://github.com/dunbarcyber/cyphon) - Open source incident management and response platform.
-- [Controlled Chaos](https://github.com/DylanCauwels/ControlledChaos) - An all-in-one application that allows teams to create, execute, and analyze chaos engineering experiments with no previous DevOps experience or additional infrastructure setup.
 - [Chaos Platform](https://github.com/chaostoolkit/chaosplatform) - Chaos Engineering Platform for Everyone.
 - [Chaos Hub](https://github.com/chaostoolkit/chaoshub-archive) - Chaos Hub stands on the shoulders of the Chaos Toolkit to provide a complete, user-friendly, platform to automate and collaborate on your Chaos Engineering and Resiliency efforts.
 - [steadybit](https://www.steadybit.com/) - Chaos Engineering platform that helps to proactively reduce downtime and provide visibility into systems to detect issues.
@@ -273,7 +270,6 @@ More details in the following link ;-)
 - https://www.infoq.com/minibooks/emag-chaos-engineering
 - https://www.pagerduty.com/blog/failure-fridays-four-years/
 - https://www.slideshare.net/zgrinch/monkeys-lemurs-and-locusts-oh-my
-- https://www.cloudreach.com/fr/blog/training-cloud-operations-teams-met-office/
 - https://softwareengineeringdaily.com/2018/02/02/chaos-engineering-with-kolton-andrus/
 - https://blog.codeship.com/embracing-the-chaos-of-chaos-engineering/
 - https://sharpend.io/chaos-monkey-for-fun-and-profit/

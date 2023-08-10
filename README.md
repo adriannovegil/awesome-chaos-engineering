@@ -161,20 +161,32 @@ More details in the following link ;-)
 - [VMware Mangle](https://vmware.github.io/mangle/) - Orchestrating Chaos Engineering.
 - [Turbulence](https://github.com/cppforlife/turbulence-release) - Tool focused on BOSH environments capable of stressing VMs, manipulating network traffic, and more. It is very simmilar to Gremlin.
 
-### Cloud
+### Private Cloud
 
 - [Glooshot](https://github.com/solo-io/glooshot) - Chaos engineering framework to help you Immunize your service mesh.
 - [kube-monkey](https://github.com/asobti/kube-monkey) - An implementation of Netflix's Chaos Monkey for Kubernetes clusters.
 - [Powerful Seal](https://github.com/bloomberg/powerfulseal) - PowerfulSeal adds chaos to your Kubernetes clusters, so that you can detect problems in your systems as early as possible. It kills targeted pods and takes VMs up and down.
 - [KubeInvaders](https://github.com/lucky-sideburn/KubeInvaders) - Gamfied Chaos engineering tool for Kubernetes Clusters.
 - [Kube DOOM](https://github.com/storax/kubedoom) - The next level of chaos engineering is here! Kill pods inside your Kubernetes cluster by shooting them in Doom.
+- [GomJabbar](https://github.com/outbrain/GomJabbar) - ChaosMonkey for your private cloud.
+
+### Amazon AWS
+
 - [Testing Amazon Aurora Using Fault Injection Queries](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Managing.html#AuroraMySQL.Managing.FaultInjectionQueries) - Testing Amazon Aurora Using Fault Injection Queries.
+- [Chaos SSM Documents](https://github.com/adhorn/chaos-ssm-documents) - Collection of AWS SSM Documents to perform Chaos Engineering experiments.
+- [failure-lambda](https://github.com/gunnargrosch/failure-lambda) - Failure injection for AWS Lambda.
+
+### Azure Cloud
+
 - [Azure Fault Analysis Service](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-testability-overview)
 - [Include controlled Chaos in Service Fabric clusters](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-controlled-chaos) - Include controlled Chaos in Service Fabric clusters.
+
 - [Chaos Lambda](https://github.com/bbc/chaos-lambda) - Randomly terminate ASG instances during business hours.
-- [GomJabbar](https://github.com/outbrain/GomJabbar) - ChaosMonkey for your private cloud.
+
+### Google Cloud Platform
+
 - [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos Engineering on Google Cloud Platform.
-- [Chaos SSM Documents](https://github.com/adhorn/chaos-ssm-documents) - Collection of AWS SSM Documents to perform Chaos Engineering experiments.
+
 
 ### Examples Projects
 

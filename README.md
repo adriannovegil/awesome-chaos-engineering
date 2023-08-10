@@ -96,6 +96,8 @@ More details in the following link ;-)
 
 ### Memory
 
+- [totalChaos](https://github.com/Rayan25062011/totalChaos) - This will overload ram, start moving opened windows everywhere, if the user enter CTRL+ALT+DEL it will put infinite command prompts.
+
 ### File system
 
 ### Disk

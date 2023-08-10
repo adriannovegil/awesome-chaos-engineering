@@ -179,6 +179,7 @@ More details in the following link ;-)
 - [GomJabbar](https://github.com/outbrain/GomJabbar) - ChaosMonkey for your private cloud.
 - [kubethanos](https://github.com/berkay-dincer/kubethanos) - kubethanos kills half of your pods randomly to engineer chaos in your preferred environment, gives you the opportunity to see how your system behaves under failures.
 - [krkn](https://github.com/redhat-chaos/krkn) - Chaos and resiliency testing tool for Kubernetes and OpenShift.
+- [kube-burner](https://github.com/cloud-bulldozer/kube-burner) - Kube-burner is a Kubernetes performance and scale test orchestration toolset.
 
 #### Amazon AWS
 

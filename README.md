@@ -83,7 +83,7 @@ More details in the following link ;-)
 - [Muxy](https://github.com/mefellows/muxy/) - A chaos testing tool for simulating a real-world distributed system failures.
 - [Chaos Blade](https://github.com/chaosblade-io/chaosblade) - Chaosblade is an experimental tool that follows the principles of Chaos Engineering and is used to simulate common fault scenarios, helping to improve the recoverability of faulty systems and the fault tolerance of faults.
 - [Cthulhu](https://github.com/xmatters/cthulhu-chaos-testing) - Chaos Engineering tool that helps evaluating the resiliency of microservice systems simulating various disaster scenarios against a target infrastructure in a data-driven manner.
-- [Namazu](https://github.com/osrg/namazu) - Programmable fuzzy scheduler for testing distributed systems.  
+- [Namazu](https://github.com/osrg/namazu) - Programmable fuzzy scheduler for testing distributed systems.
 - [Chaos Scimmia](https://github.com/joshuamckenty/chaos-scimmia) - Chaos Engineering for Redis.
 - [HavocLeopard](https://github.com/jonfast565/HavocLeopard) - A set of simple chaos engineering apps that can be used to royally screw up your on-prem servers.
 - [Arcdata](https://github.com/redcross/arcdata) - Open source incident management and volunteer scheduling application for Red Cross Disaster Services.
@@ -241,6 +241,8 @@ More details in the following link ;-)
 
 ## 10. References
 
+- https://kth.diva-portal.org/smash/get/diva2:1707948/SUMMARY01.pdf
+- https://github.com/dastergon/awesome-chaos-engineering
 - https://github.com/seeker89/chaos-engineering-book
 - [What is security chaos engineering and why is it important?](https://hub.packtpub.com/what-is-security-chaos-engineering-and-why-is-it-important/)
 - [Security Chaos Engineering: A new paradigm for cybersecurity](https://opensource.com/article/18/1/new-paradigm-cybersecurity)
@@ -251,9 +253,7 @@ More details in the following link ;-)
 - https://blog.qaware.de/posts/chaos-engineering-chaostoolkit/
 - https://github.com/chaoseng/wg-chaoseng/blob/master/WHITEPAPER.md
 - https://docs.google.com/document/d/1BeeJZIyReCFNLJQrZjwA4KMlUJelxFFEv3IwED16lHE/edit?ts=5ace0eab#heading=h.ephtflhfpd1d
-- https://github.com/dastergon/awesome-chaos-engineering
 - https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
-- https://github.com/dastergon/awesome-chaos-engineering
 - https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/
 - https://medium.com/capital-one-tech/4-real-world-scenarios-that-read-like-chaos-engineering-experiments-8dbf40c5f247
 - https://thenewstack.io/gremlins-tammy-butow-on-the-business-side-of-chaos-engineering/

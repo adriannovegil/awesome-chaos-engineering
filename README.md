@@ -174,7 +174,8 @@ More details in the following link ;-)
 
 - [Testing Amazon Aurora Using Fault Injection Queries](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Managing.html#AuroraMySQL.Managing.FaultInjectionQueries) - Testing Amazon Aurora Using Fault Injection Queries.
 - [Chaos SSM Documents](https://github.com/adhorn/chaos-ssm-documents) - Collection of AWS SSM Documents to perform Chaos Engineering experiments.
-- [failure-lambda](https://github.com/gunnargrosch/failure-lambda) - Failure injection for AWS Lambda.
+- [failure-lambda](https://github.com/gunnargrosch/failure-lambda) - failure-lambda is a small Node module for injecting failure into AWS Lambda.
+- [chaos_lambda](https://github.com/adhorn/aws-lambda-chaos-injection) - chaos_lambda is a small library injecting chaos into AWS Lambda.
 
 ### Azure Cloud
 

@@ -186,6 +186,7 @@ More details in the following link ;-)
 - [kubethanos](https://github.com/berkay-dincer/kubethanos) - kubethanos kills half of your pods randomly to engineer chaos in your preferred environment, gives you the opportunity to see how your system behaves under failures.
 - [krkn](https://github.com/redhat-chaos/krkn) - Chaos and resiliency testing tool for Kubernetes and OpenShift.
 - [kube-burner](https://github.com/cloud-bulldozer/kube-burner) - Kube-burner is a Kubernetes performance and scale test orchestration toolset.
+- [Chaos Controller](https://github.com/DataDog/chaos-controller) - The Chaos Controller is a Kubernetes controller with which you can inject various systemic failures, at scale, and without caring about the implementation details of your Kubernetes infrastructure.
 
 #### Amazon AWS
 

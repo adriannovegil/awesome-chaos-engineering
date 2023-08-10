@@ -134,6 +134,7 @@ More details in the following link ;-)
 - [Chaos Reverse-engineering](https://github.com/pcoppens/chaos-re) - Chaos engineering approach by Reverse-engineering.
 - [Fault](https://github.com/lingrino/go-fault) - The fault package provides go http middleware that makes it easy to inject faults into your service.
 - [GORM SQLChaos](https://github.com/u2386/gorm-sqlchaos) - GORM SQLChaos manipulates DML at program runtime based on gorm callbacks
+- [Chaos Frontend Toolkit](https://chaos-frontend-toolkit.web.app/) - A set of tools to break your web apps and, in doing so, find ways to improve them.
 
 ### Application
 

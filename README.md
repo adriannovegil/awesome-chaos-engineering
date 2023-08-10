@@ -185,6 +185,7 @@ More details in the following link ;-)
 - [Chaos SSM Documents](https://github.com/adhorn/chaos-ssm-documents) - Collection of AWS SSM Documents to perform Chaos Engineering experiments.
 - [failure-lambda](https://github.com/gunnargrosch/failure-lambda) - failure-lambda is a small Node module for injecting failure into AWS Lambda.
 - [chaos_lambda](https://github.com/adhorn/aws-lambda-chaos-injection) - chaos_lambda is a small library injecting chaos into AWS Lambda.
+- [AWSSSMChaosRunner](https://github.com/amzn/awsssmchaosrunner) - AWSSSMChaosRunner is a library which simplifies failure injection testing and chaos engineering for EC2 and ECS (with EC2 launch type).
 
 #### Azure Cloud
 

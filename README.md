@@ -132,6 +132,7 @@ More details in the following link ;-)
 - [Vue Chaos](https://github.com/aviadhahami/vue-chaos) - A simple (yet chaotic) component to introduce chaos in your Vue app.
 - [Chaos QoaLa](https://github.com/oslabs-beta/ChaosQoaLa) - ChaosQoaLa is a chaos engineering tool for injecting failure into JavaScript backed GraphQL end points.
 - [Chaos Reverse-engineering](https://github.com/pcoppens/chaos-re) - Chaos engineering approach by Reverse-engineering.
+- [Fault](https://github.com/lingrino/go-fault) - The fault package provides go http middleware that makes it easy to inject faults into your service.
 
 ### Application
 

@@ -161,6 +161,7 @@ More details in the following link ;-)
 
 - [VMware Mangle](https://vmware.github.io/mangle/) - Orchestrating Chaos Engineering.
 - [Turbulence](https://github.com/cppforlife/turbulence-release) - Tool focused on BOSH environments capable of stressing VMs, manipulating network traffic, and more. It is very simmilar to Gremlin.
+- [Chaos Lemur](https://github.com/strepsirrhini-army/chaos-lemur) - This project is a self-hostable application to randomly destroy virtual machines in a BOSH-managed environment.
 
 ### Private Cloud
 
@@ -189,7 +190,6 @@ More details in the following link ;-)
 ### Google Cloud Platform
 
 - [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos Engineering on Google Cloud Platform.
-
 
 ### Examples Projects
 

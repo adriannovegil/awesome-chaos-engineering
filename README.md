@@ -129,6 +129,7 @@ More details in the following link ;-)
 - [CHAOS GOPHER](https://github.com/chaostesting/chaosgopher) - A collection of unix style tools in GO to do chaos engineering or testing.
 - [Chaos Monkey for Spring Boot](https://codecentric.github.io/chaos-monkey-spring-boot/) - Injects latencies, exceptions, and terminations into Spring Boot applications.
 - [React Chaos](https://github.com/jchiatt/react-chaos) - Chaos Engineering for your React apps.
+- [Vue Chaos](https://github.com/aviadhahami/vue-chaos) - A simple (yet chaotic) component to introduce chaos in your Vue app.
 - [Chaos QoaLa](https://github.com/oslabs-beta/ChaosQoaLa) - ChaosQoaLa is a chaos engineering tool for injecting failure into JavaScript backed GraphQL end points.
 - [Chaos Reverse-engineering](https://github.com/pcoppens/chaos-re) - Chaos engineering approach by Reverse-engineering.
 

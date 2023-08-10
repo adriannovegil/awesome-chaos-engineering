@@ -164,7 +164,11 @@ More details in the following link ;-)
 - [Turbulence](https://github.com/cppforlife/turbulence-release) - Tool focused on BOSH environments capable of stressing VMs, manipulating network traffic, and more. It is very simmilar to Gremlin.
 - [Chaos Lemur](https://github.com/strepsirrhini-army/chaos-lemur) - This project is a self-hostable application to randomly destroy virtual machines in a BOSH-managed environment.
 
-### Private Cloud
+### Cloud
+
+- [Chaos Engine](https://github.com/ThalesGroup/chaos-engine) - Chaos Engine is an application for creating random Chaos Events in cloud applications to test resiliency.
+
+#### Private Cloud
 
 - [Glooshot](https://github.com/solo-io/glooshot) - Chaos engineering framework to help you Immunize your service mesh.
 - [kube-monkey](https://github.com/asobti/kube-monkey) - An implementation of Netflix's Chaos Monkey for Kubernetes clusters.
@@ -173,14 +177,14 @@ More details in the following link ;-)
 - [Kube DOOM](https://github.com/storax/kubedoom) - The next level of chaos engineering is here! Kill pods inside your Kubernetes cluster by shooting them in Doom.
 - [GomJabbar](https://github.com/outbrain/GomJabbar) - ChaosMonkey for your private cloud.
 
-### Amazon AWS
+#### Amazon AWS
 
 - [Testing Amazon Aurora Using Fault Injection Queries](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Managing.html#AuroraMySQL.Managing.FaultInjectionQueries) - Testing Amazon Aurora Using Fault Injection Queries.
 - [Chaos SSM Documents](https://github.com/adhorn/chaos-ssm-documents) - Collection of AWS SSM Documents to perform Chaos Engineering experiments.
 - [failure-lambda](https://github.com/gunnargrosch/failure-lambda) - failure-lambda is a small Node module for injecting failure into AWS Lambda.
 - [chaos_lambda](https://github.com/adhorn/aws-lambda-chaos-injection) - chaos_lambda is a small library injecting chaos into AWS Lambda.
 
-### Azure Cloud
+#### Azure Cloud
 
 - [Azure Fault Analysis Service](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-testability-overview)
 - [Include controlled Chaos in Service Fabric clusters](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-controlled-chaos) - Include controlled Chaos in Service Fabric clusters.
@@ -188,7 +192,7 @@ More details in the following link ;-)
 
 - [Chaos Lambda](https://github.com/bbc/chaos-lambda) - Randomly terminate ASG instances during business hours.
 
-### Google Cloud Platform
+#### Google Cloud Platform
 
 - [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos Engineering on Google Cloud Platform.
 

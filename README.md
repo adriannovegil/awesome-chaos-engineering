@@ -181,6 +181,7 @@ More details in the following link ;-)
 
 - [Azure Fault Analysis Service](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-testability-overview)
 - [Include controlled Chaos in Service Fabric clusters](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-controlled-chaos) - Include controlled Chaos in Service Fabric clusters.
+- [chaos-dingo](https://github.com/jmspring/chaos-dingo) - Monkey and Lemur are taken, so Chaos Dingo it is. This is a tool to mess with Azure services using the Azure NodeJS SDK.
 
 - [Chaos Lambda](https://github.com/bbc/chaos-lambda) - Randomly terminate ASG instances during business hours.
 

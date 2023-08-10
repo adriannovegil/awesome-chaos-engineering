@@ -176,6 +176,7 @@ More details in the following link ;-)
 - [KubeInvaders](https://github.com/lucky-sideburn/KubeInvaders) - Gamfied Chaos engineering tool for Kubernetes Clusters.
 - [Kube DOOM](https://github.com/storax/kubedoom) - The next level of chaos engineering is here! Kill pods inside your Kubernetes cluster by shooting them in Doom.
 - [GomJabbar](https://github.com/outbrain/GomJabbar) - ChaosMonkey for your private cloud.
+- [kubethanos](https://github.com/berkay-dincer/kubethanos) - kubethanos kills half of your pods randomly to engineer chaos in your preferred environment, gives you the opportunity to see how your system behaves under failures.
 
 #### Amazon AWS
 

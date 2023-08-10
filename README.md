@@ -120,7 +120,7 @@ More details in the following link ;-)
 
 - [ChaosCat](https://github.com/Torvaney/chaoscat) - Chaos engineering for Pull Requests - Taking a not-even-good joke a bit too far.
 
-#### Run time
+#### Runtime
 
 - [Byteman](https://byteman.jboss.org/) - A Swiss Army Knife for Byte Code Manipulation.
 - [Byte-Monkey](https://github.com/mrwilson/byte-monkey) - Bytecode-level fault injection for the JVM. It works by instrumenting application code on the fly to deliberately introduce faults like exceptions and latency.
@@ -140,12 +140,14 @@ More details in the following link ;-)
 - [GORM SQLChaos](https://github.com/u2386/gorm-sqlchaos) - GORM SQLChaos manipulates DML at program runtime based on gorm callbacks
 - [Chaos Frontend Toolkit](https://chaos-frontend-toolkit.web.app/) - A set of tools to break your web apps and, in doing so, find ways to improve them.
 
-### Application
+### Database
+
+- [RedFI](https://github.com/openfip/redfi) - RedFI acts as a proxy between the client and Redis with the capability of injecting faults on the fly, based on the rules given by you.
+
+### Virtual Machine
 
 - [ChaosMachine](https://github.com/KTH/royal-chaos/tree/master/chaosmachine) - Tool to do chaos engineering at the application level in the JVM.
 - [TripleAgent](https://github.com/KTH/royal-chaos/tree/master/tripleagent) - System for fault injection for Java applications. .
-
-### Kernel & Operating System
 
 ### Containers & Orchestrators
 
@@ -170,6 +172,8 @@ More details in the following link ;-)
 - [VMware Mangle](https://vmware.github.io/mangle/) - Orchestrating Chaos Engineering.
 - [Turbulence](https://github.com/cppforlife/turbulence-release) - Tool focused on BOSH environments capable of stressing VMs, manipulating network traffic, and more. It is very simmilar to Gremlin.
 - [Chaos Lemur](https://github.com/strepsirrhini-army/chaos-lemur) - This project is a self-hostable application to randomly destroy virtual machines in a BOSH-managed environment.
+
+### Kernel & Operating System
 
 ### Cloud
 

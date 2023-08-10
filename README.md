@@ -88,6 +88,7 @@ More details in the following link ;-)
 - [HavocLeopard](https://github.com/jonfast565/HavocLeopard) - A set of simple chaos engineering apps that can be used to royally screw up your on-prem servers.
 - [Arcdata](https://github.com/redcross/arcdata) - Open source incident management and volunteer scheduling application for Red Cross Disaster Services.
 - [AWS Chaos Scripts](https://github.com/adhorn/aws-chaos-scripts) - Collection of python scripts to run failure injection on AWS infrastructure.
+- [Simoorg](https://github.com/LinkedInAttic/simoorg/tree/master) - Simoorg is linkedin’s very own failure inducer framework, It was designed to be easy to extend and most of the important components are pluggable.
 
 ### CPU's
 

@@ -8,13 +8,21 @@ on:
   schedule:
     # Run weekly on Mondays at 9:00 UTC to detect link rot early
     - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   link_check:
     name: Check links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Lychee link check
         uses: lycheeverse/lychee-action@v2
         with:
@@ -30,7 +38,10 @@ jobs:
     name: Run awesome linter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
       - run: npx awesome-lint

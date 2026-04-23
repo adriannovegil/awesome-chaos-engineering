@@ -103,13 +103,9 @@ More details in the following link ;-)
 
 - [totalChaos](https://github.com/Rayan25062011/totalChaos) - Overloads RAM and simulates system resource exhaustion scenarios.
 
-### File System
-
-- [Charybdis](https://github.com/scylladb/charybdis) - Fault-injecting filesystem for testing how applications handle filesystem-level errors.
-
 ### Disk
 
-- [Disk Fillup](https://litmuschaos.github.io/litmus/experiments/categories/generic/disk-fill/) - LitmusChaos experiment to fill up disk space on a target node to test storage-related failure handling.
+- [Disk Fillup](https://litmuschaos.github.io/litmus/experiments/categories/pods/disk-fill/) - LitmusChaos experiment to fill up disk space on a target node to test storage-related failure handling.
 
 ### Networking
 
@@ -178,7 +174,6 @@ More details in the following link ;-)
 
 ### Hypervisors
 
-- [VMware Mangle](https://vmware.github.io/mangle/) - Orchestrating Chaos Engineering.
 - [Turbulence](https://github.com/cppforlife/turbulence-release) - Tool focused on BOSH environments capable of stressing VMs and manipulating network traffic.
 - [Chaos Lemur](https://github.com/strepsirrhini-army/chaos-lemur) - Self-hostable application to randomly destroy virtual machines in a BOSH-managed environment.
 
@@ -300,12 +295,11 @@ More details in the following link ;-)
 
 ## 11. Forums and Groups
 
-<-/builint ignore double-link-->
+<!--lint ignore double-link-->
 - [CNCF Chaos Engineering Working Group](https://groups.google.com/forum/#!forum/chaoseng-wg)
 - CNCF Chaos Engineering Working Group Slack: #chaosengineering (slack.cncf.io)
 - [CNCF Chaos Engineering Working Group GitHub](https://github.com/chaoseng/wg-chaoseng)
-- [Chaos Toolkit Slack Community](https://join.chaostoolkit.org)
-<-/builint ignore double-link-->
+<!--lint ignore double-link-->
 - [Chaos Community Google Group](https://groups.google.com/forum/#!forum/chaos-community)
 - [Chaos Engineering LinkedIn Group](https://www.linkedin.com/groups/7057761)
 - [Chaos Engineering Slack Community](https://gremlin.com/community)
@@ -337,7 +331,6 @@ More details in the following link ;-)
 - https://people.ucsc.edu/\~palvaro/fit-ldfi.pdf
 - https://landing.google.com/sre/book.html
 - https://www.infoq.com/minibooks/emag-chaos-engineering
-- https://www.pagerduty.com/blog/failure-fridays-four-years/
 - https://softwareengineeringdaily.com/2018/02/02/chaos-engineering-with-kolton-andrus/
 - https://blog.codeship.com/embracing-the-chaos-of-chaos-engineering/
 - https://sharpend.io/chaos-monkey-for-fun-and-profit/

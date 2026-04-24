@@ -171,6 +171,7 @@ More details in the following link ;-)
 - [Kube Entropy](https://github.com/alexlokshin/kube-entropy) - A little chaos engineering application for Kubernetes resilience testing.
 - [kubernetes-chaos-lab](https://github.com/matthewbrahms/kubernetes-chaos-lab) - A brief guide to setting up your first chaos engineering lab on Kubernetes.
 - [Chaos Mesh](https://github.com/pingcap/chaos-mesh) - A Chaos Engineering Platform for Kubernetes.
+- [KubeStellar Console](https://github.com/kubestellar/console) - Multi-cluster Kubernetes dashboard with AI-powered operations, real-time observability, and CNCF project integrations across edge and cloud clusters.
 
 ### Hypervisors
 

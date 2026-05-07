@@ -231,21 +231,12 @@ More details in the following link ;-)
 
 ## 4. Observability
 
-### Specific Tools
-
-- [Chaos Genius](https://github.com/chaos-genius/chaos_genius) - ML powered analytics engine for anomaly/outlier detection and root cause analysis.
-- [OpenTelemetry](https://opentelemetry.io/) - Collection of APIs, SDKs, and tools for instrumenting, generating, collecting, and exporting telemetry data.
-
-### General Use
-
 - [My Awesome Observability Repo ;-)](https://github.com/adriannovegil/awesome-observability)
 
 ## 5. Incident Management Tool
 
-- [incident.io](https://incident.io/) - Incident management platform built natively into Slack.
-- [PagerDuty](https://www.pagerduty.com/) - Digital operations management platform for real-time incident response.
-- [FireHydrant](https://www.firehydrant.com) - Incident management with service catalogs, status pages, and retrospectives.
-- [Rootly](https://www.rootly.io) - Incident management platform with automated workflows.
+<!--lint ignore double-link-->
+- [My Awesome SRE Repo ;-)](https://github.com/adriannovegil/awesome-sre)
 
 ## 6. Cost of SEVs
 

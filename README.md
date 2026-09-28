@@ -28,7 +28,7 @@ The latter approach is chaos engineering.
 
 ## 0. Introduction
 
-__Chaos engineering__ is defined as "the discipline of experimenting on a system in order to build confidence in the system's capability to withstand turbulent conditions in production" (Principles of Chaos Engineering, http://principlesofchaos.org/).
+__Chaos engineering__ is defined as "the discipline of experimenting on a system in order to build confidence in the system's capability to withstand turbulent conditions in production" (Principles of Chaos Engineering).
 
 In other words, it's a software testing method focusing on finding evidence of problems before they are experienced by users.
 
@@ -50,7 +50,9 @@ There are at least three good reasons to implement chaos engineering:
 
 ### Related Awesome Lists
 
+<!--lint ignore double-link-->
 - [My Awesome SRE Repo ;-)](https://github.com/adriannovegil/awesome-sre) - Curated list of Site Reliability Engineering tools and resources.
+<!--lint ignore double-link-->
 - [My Awesome Observability Repo ;-)](https://github.com/adriannovegil/awesome-observability) - Curated list of observability tools for monitoring, logging, and tracing.
 
 ## 1. Chaos in Practice
@@ -97,6 +99,7 @@ More details in the following link ;-)
 ### CPU
 
 - [CPU Troll](https://github.com/TrollScripts/cpu-troll) - Dedicated to raising CPU latency by the requested percentage and timespan.
+<!--lint ignore double-link-->
 - [stress-ng](https://github.com/ColinIanKing/stress-ng) - Tool to load and stress a computer system in various selectable ways, including CPU, memory, I/O, and more.
 
 ### Memory
@@ -134,7 +137,7 @@ More details in the following link ;-)
 - [MockLab](http://get.mocklab.io/) - API mocking (Service Virtualization) as a service.
 - [Flaw](https://github.com/GaruGaru/flaw) - Injects failures on API calls for local chaos engineering.
 - [Havoc](https://github.com/bchavez/Havoc) - Collection of dangerous code that wreaks havoc in .NET applications for chaos-engineering.
-- [Utilities for frontend chaos engineering](https://github.com/jchiatt/chaos) - Utilities for frontend chaos engineering.
+- [Utilities for frontend chaos engineering](https://github.com/jchiatt/chaos) - Collection of utilities for applying chaos to frontend applications.
 - [CHAOS GOPHER](https://github.com/chaostesting/chaosgopher) - A collection of Unix-style tools in Go for chaos engineering or testing.
 - [Chaos Monkey for Spring Boot](https://codecentric.github.io/chaos-monkey-spring-boot/) - Injects latencies, exceptions, and terminations into Spring Boot applications.
 - [React Chaos](https://github.com/jchiatt/react-chaos) - Chaos Engineering for your React apps.
@@ -160,8 +163,8 @@ More details in the following link ;-)
 - [POBS](https://github.com/KTH/royal-chaos/tree/master/pobs) - Automatic Observability and Chaos for Dockerized Java Applications.
 - [Pumba](https://github.com/gaia-adm/pumba) - Chaos testing and network emulation for Docker containers and clusters.
 - [Blockade](https://github.com/worstcase/blockade) - Docker-based utility for testing network failures and partitions in distributed applications.
-- [Chaos Engineering for Docker](https://github.com/cloudchaos/docker) - Chaos Engineering for Docker.
-- [Chaos Engineering with Docker EE](https://github.com/sameerkasi200x/docker-chaos-engineering) - Chaos Engineering with Docker EE.
+- [Chaos Engineering for Docker](https://github.com/cloudchaos/docker) - Chaos engineering experiments for Docker environments.
+- [Chaos Engineering with Docker EE](https://github.com/sameerkasi200x/docker-chaos-engineering) - Chaos engineering experiments targeting Docker Enterprise Edition.
 - [Chaos Util](https://github.com/abnamrocoesd/chaos-util) - Docker image with utilities for Chaos Engineering.
 - [Drax](https://github.com/dcos-labs/drax) - DC/OS Resilience Automated Xenodiagnosis tool for testing DC/OS deployments.
 - [Pod-Reaper](https://github.com/target/pod-reaper) - A rules-based pod killing container for Chaos testing in Kubernetes.
@@ -179,6 +182,7 @@ More details in the following link ;-)
 
 ### Kernel & Operating System
 
+<!--lint ignore double-link-->
 - [stress-ng](https://github.com/ColinIanKing/stress-ng) - Stress test tool for Linux systems covering CPU, memory, I/O, network, and kernel-level stressors.
 - [sysdig](https://github.com/draios/sysdig) - Linux system exploration and troubleshooting tool with first-class support for containers.
 
@@ -218,11 +222,11 @@ More details in the following link ;-)
 
 #### Google Cloud Platform
 
-- [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos Engineering on Google Cloud Platform.
+- [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos engineering experiments for GCP workloads.
 
 ### Example Projects
 
-- [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - A Chaos Engineering Bootcamp.
+- [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - Hands-on bootcamp materials for learning chaos engineering.
 - [HW4](https://github.com/kbalakr/Chaos-Engineering---DevOps-Demo) - Express servers used to implement service topologies.
 - [Serverless Chaos Engineering Demo](https://github.com/gunnargrosch/serverless-chaos-demo) - Demonstrates how to use Failure Injection Layer to perform chaos engineering experiments on a serverless environment.
 - [Chaos Engineering Demo](https://github.com/fazdevils/chaos-engineeing-demo) - Simple project demonstrating chaos engineering with Chaos Monkey and Resilience4J.
@@ -231,10 +235,12 @@ More details in the following link ;-)
 
 ## 4. Observability
 
+<!--lint ignore double-link-->
 - [My Awesome Observability Repo ;-)](https://github.com/adriannovegil/awesome-observability)
 
 ## 5. Incident Management Tool
 
+<!--lint ignore double-link-->
 <!--lint ignore double-link-->
 - [My Awesome SRE Repo ;-)](https://github.com/adriannovegil/awesome-sre)
 
@@ -245,8 +251,8 @@ More details in the following link ;-)
 ## 7. Chaos as a Service
 
 - [Gremlin Inc.](https://www.gremlin.com/) - Failure as a Service.
-- [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Chaos Engineering Experiment Automation.
-- [Pystol.org](https://www.pystol.org/) - The cloud chaos engineering toolbox.
+- [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Automating and orchestrating chaos engineering experiments.
+- [Pystol](https://github.com/pystol/pystol) - The cloud chaos engineering toolbox, open source fault injection platform.
 - [Chaos Platform](https://github.com/chaostoolkit/chaosplatform) - Chaos Engineering Platform for Everyone.
 - [steadybit](https://www.steadybit.com/) - Chaos Engineering platform that helps to proactively reduce downtime and provide visibility into systems.
 - [Cavisson](https://www.cavisson.com/nethavoc-resilience-testing-solution/) - Chaos engineering platform for resilience testing.
@@ -256,7 +262,7 @@ More details in the following link ;-)
 - [Target: What is a Gameday?](https://tech.target.com/2019/05/09/chaos-engineering-at-Target.html) - Chaos Gamedays experience by Target.
 - [Codecentric: Chaos Engineering Gamedays](https://blog.codecentric.de/en/2018/08/chaos-engineering-gameday/) - Chaos Gamedays by Codecentric.
 - [New Relic: How to run a Gameday?](https://blog.newrelic.com/engineering/how-to-run-a-game-day/) - Chaos Gamedays experience by New Relic.
-- [Dius: Gamedays resources](https://dius.com.au/resources/game-day/) - Resources for getting started with GameDay and Chaos Engineering.
+- [Dius: GameDay resources](https://github.com/DiUS/gameday-resources) - Resources for getting started with GameDay and Chaos Engineering, with runnable experiments.
 - [Gremlin: Gamedays](https://www.gremlin.com/gameday/) - Resources for getting started with GameDay.
 - [Gremlin: Planning your own Chaos Day](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/) - Example of a Gameday with DynamoDB by Gremlin.
 - [Gremlin: How to run a Gameday?](https://www.gremlin.com/community/tutorials/how-to-run-a-gameday/) - Methodology to run Gamedays according to Gremlin.
@@ -265,6 +271,7 @@ More details in the following link ;-)
 - [Gremlin: Inside Gremlin 2019 Gremlin Gamedays Roadmap](https://www.gremlin.com/community/tutorials/inside-gremlin-2019-gremlin-gamedays-roadmap/) - Chaos Gamedays experience by Gremlin.
 - [Gremlin: What I learned running the Chaos Lab with Kafka](https://www.gremlin.com/community/tutorials/what-i-learned-running-the-chaos-lab-kafka-breaks/) - Example of a Gameday with Kafka.
 - [Chaos Toolkit: Chaos Engineering with Humans in the loop](https://medium.com/chaos-toolkit/chaos-engineering-with-humans-in-the-loop-f4854900b1eb) - Article about Chaos Gamedays.
+<!--lint ignore double-link-->
 - [GoCardless: All fun and games until you start with Gamedays](https://gocardless.com/blog/game-days-at-gc/) - Article about Chaos Gamedays.
 - [InfoQ: Gamedays - Achieving Resilience through Chaos Engineering](https://www.infoq.com/presentations/gameday-chaos-engineering) - Presentation about Chaos Gamedays.
 
@@ -274,6 +281,7 @@ More details in the following link ;-)
 - [Learning Chaos Engineering](https://www.oreilly.com/library/view/learning-chaos-engineering/9781492050995/) - Practical guide to designing and executing controlled experiments to discover system weaknesses.
 - [Chaos Engineering Observability](https://www.oreilly.com/library/view/chaos-engineering-observability/9781492051046/) - Free report on the intersection of chaos engineering and observability.
 - [Security Chaos Engineering](https://www.oreilly.com/library/view/security-chaos-engineering/9781098113810/) - Sustaining resilience in software and systems by Aaron Rinehart and Kelly Shortridge.
+<!--lint ignore double-link-->
 - [The Chaos Engineering Collection](https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/) - Gremlin's comprehensive guide to the history, principles, and practice of chaos engineering.
 
 ## 10. Conferences and Talks
@@ -305,14 +313,12 @@ More details in the following link ;-)
 - [Injecting chaos experiments into security log pipelines](https://opensource.com/article/18/9/injecting-chaos-experiments-security-log-pipelines)
 - [Purple testing and chaos engineering in security experimentation](https://opensource.com/article/18/6/security-experimentation)
 - [A new approach to security instrumentation](https://opensource.com/article/18/4/new-approach-security-instrumentation)
-- https://blog.qaware.de/posts/chaos-engineering-the-status-quo/
-- https://blog.qaware.de/posts/chaos-engineering-chaostoolkit/
 - https://github.com/chaoseng/wg-chaoseng/blob/master/WHITEPAPER.md
-- https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
 - https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/
 - https://medium.com/capital-one-tech/4-real-world-scenarios-that-read-like-chaos-engineering-experiments-8dbf40c5f247
 - https://thenewstack.io/gremlins-tammy-butow-on-the-business-side-of-chaos-engineering/
 - https://learnk8s.io/blog/kubernetes-chaos-engineering-lessons-learned
+<!--lint ignore double-link-->
 - https://gocardless.com/blog/game-days-at-gc/
 - https://engineering.grab.com/chaos-engineering
 - https://blog.newrelic.com/engineering/chaos-engineering-explained/
@@ -326,6 +332,7 @@ More details in the following link ;-)
 - https://blog.codeship.com/embracing-the-chaos-of-chaos-engineering/
 - https://sharpend.io/chaos-monkey-for-fun-and-profit/
 - https://azure.microsoft.com/en-us/blog/inside-azure-search-chaos-engineering/
+<!--lint ignore double-link-->
 - https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/
 - https://www.gremlin.com/blog/the-discipline-of-chaos-engineering/
 - http://kth.diva-portal.org/smash/get/diva2:1366436/FULLTEXT01.pdf

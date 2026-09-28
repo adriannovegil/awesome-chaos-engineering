@@ -1,3 +1,6 @@
 # linkedin.com blocks bots and returns 999 (not covered by --accept)
 https://www.linkedin.com/*
 https://linkedin.com/*
+
+# sharpend.io blocks lychee requests (returns 400 to bots, 200 to browsers)
+https://sharpend.io/*

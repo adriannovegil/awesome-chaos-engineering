@@ -1,12 +1,12 @@
 # Awesome Chaos Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Testing in production (TiP) is gaining steam as an accepted practice in DevOps and testing communities, but no amount of preproduction QA testing can foresee all the possible scenarios in your real production deployment.
+A curated list of Chaos Engineering resources, tools, practices, case studies, and learning materials.
 
-The prevailing wisdom is that you will see failures in production; the only question is whether you'll be surprised by them or inflict them intentionally to test system resilience and learn from the experience.
+Chaos Engineering is the discipline of experimenting on a system to build confidence in its ability to withstand turbulent conditions in production. It is not about breaking things randomly, but about designing controlled experiments that uncover weaknesses before they affect users.
 
-The latter approach is chaos engineering.
+This repository focuses on Chaos Engineering principles, experiment practices, fault injection, GameDays, tools, and learning resources.
 
-> To understand all this knowledge is very important have a good background in Chaos Engineering, containers, fault injection, monitoring and observability.
+Related topics such as Site Reliability Engineering, observability, software engineering, and profiling are maintained in separate repositories to avoid unnecessary duplication.
 
 ## Contents
 
@@ -50,10 +50,11 @@ There are at least three good reasons to implement chaos engineering:
 
 ### Related Awesome Lists
 
-<!--lint ignore double-link-->
+<!--lint disable double-link-->
 - [My Awesome SRE Repo ;-)](https://github.com/adriannovegil/awesome-sre) - Curated list of Site Reliability Engineering tools and resources.
 <!--lint ignore double-link-->
 - [My Awesome Observability Repo ;-)](https://github.com/adriannovegil/awesome-observability) - Curated list of observability tools for monitoring, logging, and tracing.
+<!--lint enable double-link-->
 
 ## 1. Chaos in Practice
 
@@ -95,6 +96,11 @@ More details in the following link ;-)
 - [Chaos Scimmia](https://github.com/joshuamckenty/chaos-scimmia) - Chaos Engineering for Redis.
 - [HavocLeopard](https://github.com/jonfast565/HavocLeopard) - A set of simple chaos engineering apps for on-prem servers.
 - [AWS Chaos Scripts](https://github.com/adhorn/aws-chaos-scripts) - Collection of Python scripts to run failure injection on AWS infrastructure.
+- [Dev Proxy](https://github.com/dotnet/dev-proxy) - Command-line API simulator for testing how apps respond to API failures, throttling, and slow APIs.
+- [Jepsen](https://github.com/jepsen-io/jepsen) - Framework for testing distributed systems under faults and verifying the correctness of their operation histories.
+- [Simoorg](https://github.com/linkedin/simoorg) - LinkedIn's failure inducer framework for testing the resilience of distributed systems.
+- [Chaos Experimentation Framework](https://github.com/lyft/clutch) - Extensible platform for infrastructure management including Chaos Engineering.
+- [The Simian Army](https://github.com/Netflix/SimianArmy) - Suite of tools from Netflix for keeping your cloud operating in top form (retired).
 
 ### CPU
 
@@ -109,12 +115,22 @@ More details in the following link ;-)
 ### Disk
 
 - [Disk Fillup](https://litmuschaos.github.io/litmus/experiments/categories/pods/disk-fill/) - LitmusChaos experiment to fill up disk space on a target node to test storage-related failure handling.
+- [unreliablefs](https://github.com/ligurio/unreliablefs) - FUSE-based fault injection filesystem allowing runtime error injection into file operations.
+- [CharybdeFS](https://github.com/scylladb/charybdefs) - FUSE-based fault injection filesystem from ScyllaDB with a Thrift RPC interface for instrumentation.
+- [LazyFS](https://github.com/dsrhaslab/lazyfs) - FUSE filesystem simulating lost and torn writes to test data durability and crash recovery.
 
 ### Networking
 
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) - A TCP proxy to simulate network and system conditions for chaos and resiliency testing.
 - [Comcast](https://github.com/tylertreat/comcast) - A tool designed to simulate common network problems like latency, bandwidth restrictions, and dropped/reordered/corrupted packets.
 - [Chaos HTTP Proxy](https://github.com/bouncestorage/chaos-http-proxy) - Introduces failures into HTTP requests via a proxy server.
+- [tc netem](https://man7.org/linux/man-pages/man8/tc-netem.8.html) - Linux network emulation tool for injecting delay, packet loss, duplication, corruption, reordering, and bandwidth limitations.
+- [tcconfig](https://github.com/thombashi/tcconfig) - A tc command wrapper that makes it easy to set up traffic control of bandwidth, latency, packet loss, and corruption on network interfaces and Docker containers.
+- [clumsy](https://github.com/jagt/clumsy) - Network condition simulator for Windows, injecting lag, drop, throttle, and reordering.
+- [speedbump](https://github.com/kffl/speedbump) - TCP proxy for simulating variable yet predictable network latency, written in Go.
+- [Noxious](https://github.com/oguzbilgener/noxious) - Rust port of the Toxiproxy server, fully compatible with its REST API and client libraries.
+- [Tickchaos](https://github.com/mirotvoretts/tickchaos) - Protocol-aware UDP chaos proxy for market data feed handlers, injecting packet loss, jitter, reordering, and sequence-gap faults.
+- [Saboteur](https://github.com/tomakehurst/saboteur) - __(Not for production)__ Network fault injection tool with an agent that configures partitions, delays, and packet loss via HTTP commands.
 
 ### Security
 
@@ -137,9 +153,15 @@ More details in the following link ;-)
 - [MockLab](http://get.mocklab.io/) - API mocking (Service Virtualization) as a service.
 - [Flaw](https://github.com/GaruGaru/flaw) - Injects failures on API calls for local chaos engineering.
 - [Havoc](https://github.com/bchavez/Havoc) - Collection of dangerous code that wreaks havoc in .NET applications for chaos-engineering.
-- [Utilities for frontend chaos engineering](https://github.com/jchiatt/chaos) - Collection of utilities for applying chaos to frontend applications.
+- [Utilities for frontend chaos engineering](https://github.com/jchiatt/chaos) - JavaScript utilities to introduce chaos into frontend applications.
 - [CHAOS GOPHER](https://github.com/chaostesting/chaosgopher) - A collection of Unix-style tools in Go for chaos engineering or testing.
 - [Chaos Monkey for Spring Boot](https://codecentric.github.io/chaos-monkey-spring-boot/) - Injects latencies, exceptions, and terminations into Spring Boot applications.
+- [Polly Chaos Engineering](https://github.com/App-vNext/Polly) - .NET resilience and transient-fault-handling library with chaos engineering strategies for injecting faults, latency, and outcomes.
+- [gofail](https://github.com/etcd-io/gofail) - Failpoints for Go from the etcd ecosystem, allowing fault injection at specific program points.
+- [PingCAP failpoint](https://github.com/pingcap/failpoint) - Failpoint implementation for Go with configurable actions like returns, pauses, and panics.
+- [fail-rs](https://github.com/tikv/fail-rs) - Fail points for Rust, enabling error and behavior injection at runtime for testing.
+- [falzm/chaos](https://github.com/falzm/chaos) - __(Archived)__ Go HTTP middleware for injecting delays and errors into web applications, configurable on the fly via a management controller.
+- [Pastaay](https://github.com/CemAkan/pastaay) - __(Experimental)__ Cloud-native chaos engineering toolkit for Go with fault injection across HTTP, gRPC, Kafka, Redis, SQL, and MongoDB.
 - [React Chaos](https://github.com/jchiatt/react-chaos) - Chaos Engineering for your React apps.
 - [Vue Chaos](https://github.com/aviadhahami/vue-chaos) - A simple yet chaotic component to introduce chaos in your Vue app.
 - [Chaos QoaLa](https://github.com/oslabs-beta/ChaosQoaLa) - Chaos engineering tool for injecting failure into JavaScript-backed GraphQL endpoints.
@@ -151,6 +173,7 @@ More details in the following link ;-)
 ### Database
 
 - [RedFI](https://github.com/openfip/redfi) - Acts as a proxy between the client and Redis with the capability of injecting faults on the fly.
+- [orchestrator](https://github.com/github/orchestrator) - MySQL replication topology management and HA tool, used for controlled failure testing of database clusters.
 
 ### Virtual Machine
 
@@ -163,8 +186,8 @@ More details in the following link ;-)
 - [POBS](https://github.com/KTH/royal-chaos/tree/master/pobs) - Automatic Observability and Chaos for Dockerized Java Applications.
 - [Pumba](https://github.com/gaia-adm/pumba) - Chaos testing and network emulation for Docker containers and clusters.
 - [Blockade](https://github.com/worstcase/blockade) - Docker-based utility for testing network failures and partitions in distributed applications.
-- [Chaos Engineering for Docker](https://github.com/cloudchaos/docker) - Chaos engineering experiments for Docker environments.
-- [Chaos Engineering with Docker EE](https://github.com/sameerkasi200x/docker-chaos-engineering) - Chaos engineering experiments targeting Docker Enterprise Edition.
+- [Chaos Engineering for Docker](https://github.com/cloudchaos/docker) - Experiments and tools for applying chaos engineering in Docker environments.
+- [Chaos Engineering with Docker EE](https://github.com/sameerkasi200x/docker-chaos-engineering) - Examples and practices for applying chaos engineering with Docker Enterprise Edition.
 - [Chaos Util](https://github.com/abnamrocoesd/chaos-util) - Docker image with utilities for Chaos Engineering.
 - [Drax](https://github.com/dcos-labs/drax) - DC/OS Resilience Automated Xenodiagnosis tool for testing DC/OS deployments.
 - [Pod-Reaper](https://github.com/target/pod-reaper) - A rules-based pod killing container for Chaos testing in Kubernetes.
@@ -174,6 +197,7 @@ More details in the following link ;-)
 - [Kube Entropy](https://github.com/alexlokshin/kube-entropy) - A little chaos engineering application for Kubernetes resilience testing.
 - [kubernetes-chaos-lab](https://github.com/matthewbrahms/kubernetes-chaos-lab) - A brief guide to setting up your first chaos engineering lab on Kubernetes.
 - [Chaos Mesh](https://github.com/pingcap/chaos-mesh) - A Chaos Engineering Platform for Kubernetes.
+- [xk6-disruptor](https://github.com/grafana/xk6-disruptor) - Grafana k6 extension for injecting HTTP and gRPC faults into Kubernetes pods and services.
 
 ### Hypervisors
 
@@ -185,6 +209,33 @@ More details in the following link ;-)
 <!--lint ignore double-link-->
 - [stress-ng](https://github.com/ColinIanKing/stress-ng) - Stress test tool for Linux systems covering CPU, memory, I/O, network, and kernel-level stressors.
 - [sysdig](https://github.com/draios/sysdig) - Linux system exploration and troubleshooting tool with first-class support for containers.
+- [libfiu](https://github.com/albertito/libfiu) - C library for fault injection in userspace, including POSIX API failure injection without modifying application code.
+- [bpfki](https://github.com/chaos-mesh/bpfki) - BPF-based kernel fault injection service from the Chaos Mesh ecosystem.
+- [libfaketime](https://github.com/wolfcw/libfaketime) - Library that modifies the time perceived by an application for testing time-dependent behavior.
+
+### Simulation and Verification
+
+- [Turmoil](https://github.com/tokio-rs/turmoil) - Deterministic simulation testing for distributed systems in Rust, injecting latency, drops, partitions, and crashes.
+- [MadSim](https://github.com/madsim-rs/madsim) - Deterministic simulation runtime for distributed systems in Rust, complementing Turmoil.
+- [Loom](https://github.com/tokio-rs/loom) - Concurrency permutation testing tool for Rust, exploring possible concurrent executions.
+- [Microsoft Coyote](https://github.com/microsoft/coyote) - Testing framework for concurrent C# code with deterministic bug reproduction.
+- [Shuttle](https://github.com/awslabs/shuttle) - Deterministic testing framework for Rust concurrency, exploring thread schedules to find bugs.
+- [Porcupine](https://github.com/anishathalye/porcupine) - Fast linearizability checker in Go for verifying whether operation histories match the expected consistency model.
+- [Elle](https://github.com/jepsen-io/elle) - Transactional safety analyzer using cycle detection to evaluate consistency of database histories, complementing Jepsen.
+- [FaultFuzz](https://github.com/fwhdzh/FaultFuzz) - __(Research)__ Fault injection tool extending the prior CrashFuzz work.
+- [CoFI](https://github.com/hanseychen/CoFI) - __(Research)__ Consistency-guided fault injection for cloud systems, injecting network partitions at inconsistent states.
+- [FIES](https://github.com/ahoeller/fies) - __(Research)__ QEMU-based fault injection framework for system-level analysis of fault tolerance and countermeasures.
+
+### Research Prototypes
+
+- [Filibuster](https://github.com/filibuster-testing/filibuster) - __(Research)__ Prototype of service-level fault injection testing in Python, injecting faults in inter-service communication.
+- [Mallory](https://github.com/dsfuzz/mallory) - __(Research)__ Greybox fuzzing of distributed systems, an adaptive extension of Jepsen that injects faults based on runtime behavior.
+- [Molly](https://github.com/palvaro/molly) - __(Research)__ Implementation of lineage-driven fault injection, reasoning backwards from correct outcomes to find failure combinations.
+- [ChaosEater](https://github.com/ntt-dkiku/chaos-eater) - __(Research)__ LLM-based system that fully automates the chaos engineering cycle on Kubernetes with Chaos Mesh.
+- [agent-chaos](https://github.com/deepankarm/agent-chaos) - __(Experimental)__ Chaos engineering for AI agents, injecting LLM and tool failures with LLM-as-judge evaluation.
+- [langchain-chaos-middleware](https://github.com/iroy2000/langchain-chaos-middleware) - __(Experimental)__ Middleware for LangChain agents that injects exceptions into tool and model calls.
+- [Chaosbringer](https://github.com/mizchi/chaosbringer) - __(Experimental)__ Chaos engineering for web apps using a Playwright-based crawler that injects network, lifecycle, and runtime faults.
+- [Fuzzbox](https://github.com/eneswritescode/fuzzbox) - __(Experimental)__ Chaos engineering and API fuzzing middleware for Express.js and Next.js, injecting latency, errors, and data corruption.
 
 ### Cloud
 
@@ -202,6 +253,7 @@ More details in the following link ;-)
 - [krkn](https://github.com/redhat-chaos/krkn) - Chaos and resiliency testing tool for Kubernetes and OpenShift.
 - [kube-burner](https://github.com/cloud-bulldozer/kube-burner) - Kubernetes performance and scale test orchestration toolset.
 - [Chaos Controller](https://github.com/DataDog/chaos-controller) - Kubernetes controller for injecting various systemic failures at scale.
+- [VMware Mangle](https://github.com/vmware-archive/mangle) - Orchestrating Chaos Engineering for vSphere, Docker, Kubernetes, and AWS environments (archived).
 
 #### Amazon AWS
 
@@ -212,6 +264,7 @@ More details in the following link ;-)
 - [chaos_lambda](https://github.com/adhorn/aws-lambda-chaos-injection) - Small library injecting chaos into AWS Lambda.
 - [Chaos Lambda](https://github.com/bbc/chaos-lambda) - Randomly terminate ASG instances during business hours.
 - [AWSSSMChaosRunner](https://github.com/amzn/awsssmchaosrunner) - Library which simplifies failure injection testing and chaos engineering for EC2 and ECS.
+- [Chaos Machine](https://github.com/awslabs/chaos-machine) - Complete chaos engineering workflow using AWS Fault Injection Service, CloudWatch, and Prometheus to test hypotheses.
 
 #### Azure Cloud
 
@@ -222,11 +275,12 @@ More details in the following link ;-)
 
 #### Google Cloud Platform
 
-- [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Chaos engineering experiments for GCP workloads.
+- [Chaos Engineering on Google Cloud Platform](https://github.com/cloudchaos/google-cloud-platform) - Experiments and tools for chaos engineering on GCP services and infrastructure.
+- [Chaosgarden](https://github.com/gardener/chaos-engineering) - Chaos Toolkit modules for simulating compute and network outages on AWS, Azure, GCP, OpenStack, and VMware, plus pod disruptions on Kubernetes.
 
 ### Example Projects
 
-- [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - Hands-on bootcamp materials for learning chaos engineering.
+- [A Chaos Engineering Bootcamp](https://github.com/tammybutow/chaosengineeringbootcamp) - Hands-on workshop materials for learning chaos engineering fundamentals.
 - [HW4](https://github.com/kbalakr/Chaos-Engineering---DevOps-Demo) - Express servers used to implement service topologies.
 - [Serverless Chaos Engineering Demo](https://github.com/gunnargrosch/serverless-chaos-demo) - Demonstrates how to use Failure Injection Layer to perform chaos engineering experiments on a serverless environment.
 - [Chaos Engineering Demo](https://github.com/fazdevils/chaos-engineeing-demo) - Simple project demonstrating chaos engineering with Chaos Monkey and Resilience4J.
@@ -251,18 +305,22 @@ More details in the following link ;-)
 ## 7. Chaos as a Service
 
 - [Gremlin Inc.](https://www.gremlin.com/) - Failure as a Service.
-- [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Automating and orchestrating chaos engineering experiments.
-- [Pystol](https://github.com/pystol/pystol) - The cloud chaos engineering toolbox, open source fault injection platform.
+- [Chaos Engineering Experiment Automation](https://chaostoolkit.org/) - Open-source platform for running automated chaos engineering experiments with extensible drivers.
 - [Chaos Platform](https://github.com/chaostoolkit/chaosplatform) - Chaos Engineering Platform for Everyone.
 - [steadybit](https://www.steadybit.com/) - Chaos Engineering platform that helps to proactively reduce downtime and provide visibility into systems.
 - [Cavisson](https://www.cavisson.com/nethavoc-resilience-testing-solution/) - Chaos engineering platform for resilience testing.
+- [Harness Chaos Engineering](https://developer.harness.io/docs/chaos-engineering/) - Enterprise resilience testing platform for running controlled experiments across Kubernetes, Linux, and Windows environments.
+- [Antithesis](https://antithesis.com/) - Deterministic testing platform that runs workloads in a simulated environment to find bugs and verify fault tolerance.
+- [ChaosMeta](https://github.com/traas-stack/chaosmeta) - __(Archived)__ Cloud-native chaos engineering platform from Ant Group covering the complete fault drill lifecycle.
+- [Tumult](https://github.com/mwigge/tumult) - __(Experimental)__ Rust-native chaos engineering platform with OpenTelemetry, embedded analytics, and plugins for Kubernetes, databases, and Kafka.
+- [Proofdock's Chaos Engineering Platform](https://marketplace.visualstudio.com/items?itemName=proofdock.chaos-platform) - A chaos engineering platform that integrates in Azure DevOps and focuses on the Azure cloud platform.
+- [Pystol](https://github.com/pystol/pystol) - Fault injection platform for executing fault injection actions in cloud-native environments in a controlled way.
 
 ## 8. Gamedays
 
 - [Target: What is a Gameday?](https://tech.target.com/2019/05/09/chaos-engineering-at-Target.html) - Chaos Gamedays experience by Target.
-- [Codecentric: Chaos Engineering Gamedays](https://blog.codecentric.de/en/2018/08/chaos-engineering-gameday/) - Chaos Gamedays by Codecentric.
+- [Codecentric: Chaos Engineering Gamedays](https://www.codecentric.de/wissens-hub/blog/chaos-engineering-gameday) - Chaos Gamedays by Codecentric.
 - [New Relic: How to run a Gameday?](https://blog.newrelic.com/engineering/how-to-run-a-game-day/) - Chaos Gamedays experience by New Relic.
-- [Dius: GameDay resources](https://github.com/DiUS/gameday-resources) - Resources for getting started with GameDay and Chaos Engineering, with runnable experiments.
 - [Gremlin: Gamedays](https://www.gremlin.com/gameday/) - Resources for getting started with GameDay.
 - [Gremlin: Planning your own Chaos Day](https://www.gremlin.com/community/tutorials/planning-your-own-chaos-day/) - Example of a Gameday with DynamoDB by Gremlin.
 - [Gremlin: How to run a Gameday?](https://www.gremlin.com/community/tutorials/how-to-run-a-gameday/) - Methodology to run Gamedays according to Gremlin.
@@ -313,13 +371,12 @@ More details in the following link ;-)
 - [Injecting chaos experiments into security log pipelines](https://opensource.com/article/18/9/injecting-chaos-experiments-security-log-pipelines)
 - [Purple testing and chaos engineering in security experimentation](https://opensource.com/article/18/6/security-experimentation)
 - [A new approach to security instrumentation](https://opensource.com/article/18/4/new-approach-security-instrumentation)
+- [Security Chaos Engineering for Cloud Services](https://medium.com/@run2obtain/from-resilience-to-dependability-security-chaos-engineering-for-cloud-services-9c6d6d152ed2) - From resilience to dependability: security chaos engineering for cloud services.
 - https://github.com/chaoseng/wg-chaoseng/blob/master/WHITEPAPER.md
 - https://www.techrepublic.com/article/chaos-engineering-a-cheat-sheet/
 - https://medium.com/capital-one-tech/4-real-world-scenarios-that-read-like-chaos-engineering-experiments-8dbf40c5f247
 - https://thenewstack.io/gremlins-tammy-butow-on-the-business-side-of-chaos-engineering/
-- https://learnk8s.io/blog/kubernetes-chaos-engineering-lessons-learned
-<!--lint ignore double-link-->
-- https://gocardless.com/blog/game-days-at-gc/
+- https://learnkube.com/blog/kubernetes-chaos-engineering-lessons-learned
 - https://engineering.grab.com/chaos-engineering
 - https://blog.newrelic.com/engineering/chaos-engineering-explained/
 - https://slack.engineering/disasterpiece-theater-slacks-process-for-approachable-chaos-engineering-3434422afb54
@@ -330,10 +387,7 @@ More details in the following link ;-)
 - https://www.infoq.com/minibooks/emag-chaos-engineering
 - https://softwareengineeringdaily.com/2018/02/02/chaos-engineering-with-kolton-andrus/
 - https://blog.codeship.com/embracing-the-chaos-of-chaos-engineering/
-- https://sharpend.io/chaos-monkey-for-fun-and-profit/
 - https://azure.microsoft.com/en-us/blog/inside-azure-search-chaos-engineering/
-<!--lint ignore double-link-->
-- https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/
 - https://www.gremlin.com/blog/the-discipline-of-chaos-engineering/
 - http://kth.diva-portal.org/smash/get/diva2:1366436/FULLTEXT01.pdf
 - https://arxiv.org/pdf/1907.13039.pdf
